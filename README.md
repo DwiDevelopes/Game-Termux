@@ -3,7 +3,7 @@
 
 <b>Termux tidak mendukung penggunaan paket dari Debian, Ubuntu, dan repositori distribusi Linux lainnya. Oleh karena itu, jangan mencoba memasukkan paket-paket ini ke dalam daftar sumber Anda atau menginstal file .deb secara manual. Lihat Perbedaan dari Linux untuk mengetahui alasannya.
 
-Pembatasan tambahan:
+# Pembatasan tambahan:
 
 -Saat ini, hanya satu arsitektur yang didukung. Anda tidak dapat menginstal paket 64 dan 32 bit secara bersamaan.
 -Penggunaan apt di bawah root dibatasi untuk mencegah kekacauan kepemilikan dan label SELinux pada partisi Android/data.
@@ -13,10 +13,11 @@ Pembatasan tambahan:
 
 Menyediakan pintasan perintah. Gunakan "pkg in" sebagai ganti "pkg install" atau "apt install".
 Secara otomatis menjalankan "apt update" sebelum menginstal paket jika perlu.
-Melakukan penyeimbangan beban repositori sisi klien dengan secara otomatis mengganti mirror secara berkala. Hal ini penting untuk mencegah kami mencapai batas kuota pada hosting.
+Melakukan penyeimbangan beban repositori sisi klien dengan secara otomatis mengganti mirror secara berkala. Hal ini penting untuk mencegah kami mencapai batas kuota pada hosting.</br>
 
-Menginstal paket baru:
+# Menginstal paket baru:
 
+<b>
 pkg instal nama-paket
 Sangat disarankan untuk meng-upgrade paket yang sudah ada sebelum menginstal paket yang baru. Anda dapat menginstal pembaruan dengan menjalankan perintah ini:
 
@@ -26,10 +27,11 @@ Selain itu, kami sarankan untuk memeriksa pembaruan setidaknya seminggu sekali. 
 Menghapus paket yang terinstal:
 
 pkg hapus instalan nama-paket
-Ini akan menghapus paket tetapi berkas konfigurasi yang dimodifikasi akan tetap utuh. Jika Anda ingin menghapusnya, gunakan apt purgesaja.
+Ini akan menghapus paket tetapi berkas konfigurasi yang dimodifikasi akan tetap utuh. Jika Anda ingin menghapusnya, gunakan apt purgesaja.</b>
 
-Lihat di bawah untuk perintah tambahan yang didukung:
+# Lihat di bawah untuk perintah tambahan yang didukung:
 
+<b>
 Memerintah	Keterangan
 pkg autoclean	Hapus file .deb yang kedaluwarsa dari cache.
 pkg clean	Hapus semua file .deb dari cache.
@@ -40,7 +42,7 @@ pkg reinstall "package"	Instal ulang paket yang ditentukan.
 pkg search "query"	Cari paket berdasarkan kueri.
 pkg show "package"	Menampilkan informasi tentang paket tertentu.</b>
 
-
+# Repositori Termux
 <b>Repositori Termux utama dapat diakses melalui https://packages.termux.org/apt/termux-main/
 
 Kami memiliki beberapa repositori opsional yang menyediakan konten pada topik tertentu dan dapat diaktifkan dengan menginstal paket dengan nama berakhiran -repo.
@@ -72,6 +74,8 @@ Website🌎: https://portofolio-dwi-bakti-n-dev-liard.vercel.app/ <br>
 
 Tiktok 🤩: https://www.Tiktok.com/@Royhtml <br>
 
+Whatsapp 😏: https://wa.me/+6289652969323 <br>
+
 <br>
 <p align="center">
   <img alt="Smiley face" src="https://i.ytimg.com/vi/hSEQ8LvJhks/sddefault.jpg">
@@ -84,7 +88,7 @@ visit : https://linkr.bio/BangRoy.go.id
 
 <br>
 
-## Install📲:
+## Install Termux📲:
 
 ```pkg install git -y```
 <br>
@@ -92,8 +96,11 @@ visit : https://linkr.bio/BangRoy.go.id
 <br><br>
 ```pkg install```
 <br></br>
-<br><br>
 ```pkg update```
+<br></br>
+```pkg install git```
+<br></br>
+```pkg install pyhthon```
 <br></br>
 ```git clone https://github.com/DwiDevelopes/Game-Termux/```
 <br><br>
@@ -107,7 +114,7 @@ visit : https://linkr.bio/BangRoy.go.id
 
 ## instal full pack 🩻:
 <br>
-pkg install && pkg update && pkg install git && pkg install git -y && git clone https://github.com/DwiDevelopes/Termux-Games.git && cd Termux-Games && chmod +x * && bash install.sh
+pkg install && pkg update && pkg install git && pkg install python && pkg install git -y && git clone https://github.com/DwiDevelopes/Termux-Games.git && cd Termux-Games && chmod +x * && bash install.sh
 </br>
 
 ## Run🏃🏻‍♂️:
