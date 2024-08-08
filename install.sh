@@ -48,7 +48,7 @@ figlet Sudoku | lolcat && echo Installing..................... | lolcat
 echo -e "\e[032m"
 pkg install nudoku && apt install nudoku
 
-figlet Overkill | lolcat && echo Installing..................... | lolcat
+figlet overkill | lolcat && echo Installing..................... | lolcat
 echo -e "\e[032m"
 pkg install overkill && apt install overkill
 
