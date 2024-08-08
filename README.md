@@ -70,11 +70,13 @@ Anda dapat memilih cermin dengan menggunakan utilitas termux-change-repo.
 
 Author👨‍💻: https://github.com/DwiDevelopes <br>
 
-Website🌎: https://portofolio-dwi-bakti-n-dev-liard.vercel.app/ <br>
+Website🌎: https://linkr.bio/BangRoy.go.id <br>
 
 Tiktok 🤩: https://www.Tiktok.com/@Royhtml <br>
 
 Whatsapp 😏: https://wa.me/+6289652969323 <br>
+
+Telegram 😏: https://t.me/@BangRoy78 <br>
 
 <br>
 <p align="center">
@@ -90,8 +92,9 @@ visit : https://linkr.bio/BangRoy.go.id
 
 ## Install Termux📲:
 
-```pkg install git -y```
+```pkg install```
 <br>
+```pkg install git -y```
 <br>
 <br><br>
 ```pkg install```
@@ -114,7 +117,7 @@ visit : https://linkr.bio/BangRoy.go.id
 
 ## instal full pack 🩻:
 <br>
-pkg install && pkg update && pkg install git && pkg install python && pkg install git -y && git clone https://github.com/DwiDevelopes/Termux-Games.git && cd Termux-Games && chmod +x * && bash install.sh
+pkg install && pkg update && pkg install git && pkg install python && pkg install git -y && git clone https://github.com/DwiDevelopes/Game-Termux.git && cd Termux-Games && chmod +x * && bash install.sh
 </br>
 
 ## Run🏃🏻‍♂️:
