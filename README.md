@@ -68,7 +68,7 @@ Anda dapat membuat repositori sendiri dengan menggunakan termux-apt-repo dari ba
 
 Anda dapat memilih cermin dengan menggunakan utilitas termux-change-repo.
 
-Author👨‍💻: https://github.com/DwiDevelopes <br>
+Developer👨‍💻: https://github.com/DwiDevelopes <br>
 
 Website🌎: https://linkr.bio/BangRoy.go.id <br>
 
