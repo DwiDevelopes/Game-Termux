@@ -6,30 +6,30 @@ do
 clear
 
 echo "😭😖😲🫠🙃😜😫     PLAY NOW      😲🫠🙃😜😫😯😣" | lolcat -s 100000 
-echo "▄▄▄█████▓▓█████  ██▀███   ███▄ ▄███▓ █    ██ ▒██   ██▒" | lolcat -s 100000 
-echo "▓  ██▒ ▓▒▓█   ▀ ▓██ ▒ ██▒▓██▒▀█▀ ██▒ ██  ▓██▒▒▒ █ █ ▒░" | lolcat -s 100000
-echo "▒ ▓██░ ▒░▒███   ▓██ ░▄█ ▒▓██    ▓██░▓██  ▒██░░░  █   ░" | lolcat -s 100000
-echo "░ ▓██▓ ░ ▒▓█  ▄ ▒██▀▀█▄  ▒██    ▒██ ▓▓█  ░██░ ░ █ █ ▒ " | lolcat -s 100000
-echo "  ▒██▒ ░ ░▒████▒░██▓ ▒██▒▒██▒   ░██▒▒▒█████▓ ▒██▒ ▒██▒" | lolcat -s 100000
-echo "  ▒ ░░   ░░ ▒░ ░░ ▒▓ ░▒▓░░ ▒░   ░  ░░▒▓▒ ▒ ▒ ▒▒ ░ ░▓ ░" | lolcat -s 100000
-echo "    ░     ░ ░  ░  ░▒ ░ ▒░░  ░      ░░░▒░ ░ ░ ░░   ░▒ ░" | lolcat -s 100000
-echo "  ░         ░     ░░   ░ ░      ░    ░░░ ░ ░  ░    ░  " | lolcat -s 100000
-echo "            ░  ░   ░            ░      ░      ░    ░  " | lolcat -s 100000
-echo "   ▄████  ▄▄▄       ███▄ ▄███▓▓█████   ██████         " | lolcat -s 100000
-echo "  ██▒ ▀█▒▒████▄    ▓██▒▀█▀ ██▒▓█   ▀ ▒██    ▒         " | lolcat -s 100000
-echo " ▒██░▄▄▄░▒██  ▀█▄  ▓██    ▓██░▒███   ░ ▓██▄           " | lolcat -s 100000
-echo " ░▓█  ██▓░██▄▄▄▄██ ▒██    ▒██ ▒▓█  ▄   ▒   ██▒        " | lolcat -s 100000
-echo " ░▒▓███▀▒ ▓█   ▓██▒▒██▒   ░██▒░▒████▒▒██████▒▒        " | lolcat -s 100000
-echo "  ░▒   ▒  ▒▒   ▓▒█░░ ▒░   ░  ░░░ ▒░ ░▒ ▒▓▒ ▒ ░        " | lolcat -s 100000
-echo "   ░   ░   ▒   ▒▒ ░░  ░      ░ ░ ░  ░░ ░▒  ░ ░        " | lolcat -s 100000
-echo " ░ ░   ░   ░   ▒   ░      ░      ░   ░  ░  ░          " | lolcat -s 100000
-echo "       ░       ░  ░       ░      ░  ░      ░          " | lolcat -s 100000
-echo "       ░       ░  ░       ░      ░  ░      ░          " | lolcat -s 100000
+echo "______________________________________________________" | lolcat -s 100000 
+echo "                 Game Termux V2.0.1                   " | lolcat -s 100000
+echo "                                                      " | lolcat -s 100000
+echo " ______   ____   ____    __    ___          |   /     " | lolcat -s 100000
+echo "   |      |      |   |   |   \/  |   |    | | /       " | lolcat -s 100000
+echo "   |      |___   __  |   |       |   |    | |         " | lolcat -s 100000
+echo "   |      |      |   \   |       |   |    | | \       " | lolcat -s 100000
+echo "   |      |___   |    \  |       |   | ___| |  \      " | lolcat -s 100000
+echo "                                                      " | lolcat -s 100000
+echo "  _____      😎    __    ___    ____                  " | lolcat -s 90000
+echo " |          / \    |   \/  |    |                     " | lolcat -s 100000
+echo " |  _ _   /  _  \  |       |    |                     " | lolcat -s 100000
+echo " |    |  /       \ |       |    |___                  " | lolcat -s 100000
+echo " |____|            |       |    |                     " | lolcat -s 100000
+echo "                                |___                  " | lolcat -s 100000
+echo "                                                      " | lolcat -s 100000
+echo "                                                      " | lolcat -s 100000
+echo "                                                      " | lolcat -s 100000
+echo "______________________________________________________" | lolcat -s 100000
 echo "🩻🩻🩻🩻🩻     Dwi Bakti Nugroho  🩻🩻🩻🩻🩻🩻🩻" | lolcat -s 100000
 echo "----------------------Royhtml-------------------------" | lolcat
-echo "-----{ Website: https://linkr.bio/BangRoy.go.id }-----" | lolcat -as 40
-echo "---Game Tersebut Dilindungi Oleh dwi bakti n dev------" | lolcat -as 40
-echo "------Game dilindungi hak cipta dwi bakti n dev-------" | lolcat -as 40
+echo "-----{ Website: https://linkr.bio/BangRoy.go.id }-----" | lolcat -as 50
+echo "---Game Tersebut Dilindungi Oleh dwi bakti n dev------" | lolcat -as 50
+echo "------Game dilindungi hak cipta dwi bakti n dev-------" | lolcat -as 50
 echo "---------------------💕💕----------------------------" | lolcat 
 
 
@@ -56,7 +56,9 @@ echo "[game dwi bakti 20] moria " | lolcat -as 1000
 echo "[game dwi bakti 21] npush " | lolcat -as 1000
 echo "[game dwi bakti 22] robotfindskitten " | lolcat -as 1000
 echo "[game dwi bakti 23] ttysolitaire " | lolcat -as 1000
-echo "[game dwi bakti 24] myman " | lolcat -as 1000
+echo "[game dwi bakti 24] go " | lolcat -as 1000
+echo "[game dwi bakti 25] ski " | lolcat -as 1000
+echo "[game dwi bakti 26] curse of war " | lolcat -as 1000
 echo "[keterangan Dwi bakti N Dev ]  Ayo Lihat " | lolcat -as 1000
 echo "[cek si pembuat]  Cek Keterangan Saya " | lolcat -as 1000
 echo "[kembali]  KELUAR "  | lolcat -as 1000
@@ -125,7 +127,7 @@ case $option in
 	"game dwi bakti 11")
 	echo "Press CTRL + c to Exit this game" | lolcat -a
 	read -p "Press [ENTER] to Start the Game: " | lolcat -a
-	overkill
+	0verkill
 	
 ;;
 	"game dwi bakti 12")
@@ -207,11 +209,34 @@ case $option in
 	echo "Press CTRL + c to Exit this game" | lolcat -a
 	read -p "Press [ENTER] to Start the Game: " | lolcat -a
 	myman
+;;
+	"game dwi bakti 25")
+	echo "Press CTRL + c to Exit this game" | lolcat -a
+	read -p "Press [ENTER] to Start the Game: " | lolcat -a
+	go
+
+;;
+	"game dwi bakti 26")
+	echo "Press CTRL + c to Exit this game" | lolcat -a
+	read -p "Press [ENTER] to Start the Game: " | lolcat -a
+	ski
+
+ ;;
+	"game dwi bakti 27")
+	echo "Press CTRL + c to Exit this game" | lolcat -a
+	read -p "Press [ENTER] to Start the Game: " | lolcat -a
+	curse of war
 
 ;;
 	"keterangan dwi bakti") 
 	echo "keterangan Dwi bakti N Dev    " | lolcat -s 10000
-	echo "Game ini di buat oeleh orang indonesia yang bernama dwi bakti n dev dan dilindungi oleh hak cipta dan memiliki tiktok yang bernama _Royhtml_" | lolcat -s 10000
+	echo "Masa Kecil: " | lolcat
+	echo "masa kecil saya sangat menyukai game mulai cara melihat cara pembuatanya hingga sampai pemograman nya dan saya sangat senang dalam pemograman tersebut dan ingin membantu semuah orang" | lolcat -as 100
+	echo "Masa Remaja : " | lolcat
+        echo "saya akan berusaha membantu orang lain di saat muda mulai dari database hingga membantu orang lain dengan hack dikala itu saya sangat susah mendapatkan uang" | lolcat -as 100
+	echo "Masa Berfikir : " | lolcat
+        echo "saya mulai berfikir banyak hal tentang mencari uang dengan sangat keji hingga sampai pernah hack data dan menjual ke dark web dikala itu sangat sulit mendapatkan uang" | lolcat -as 100
+	echo "Masa Berfikir : " | lolcat
 	break
 ;;
 	"cek si pembuat")
@@ -232,7 +257,8 @@ case $option in
 	echo ""
 	echo " [Whatsapp] = [https://wa.me/+6289652969323] " | lolcat -as 50
 	echo ""
-	echo "[Tiktok]" = [www.Tiktok.com/@Royhtml] | lolcat -as 50
+	echo "[Tiktok] = [www.Tiktok.com/@Royhtml] " | lolcat -as 50
+        echo "[----------------Versi 2.0.1-------------------] " | lolcat -as 50
 	echo "[-----------------------------------------------------]" | lolcat -as 100
 	read -p "Press [ENTER] to continue: "
 
