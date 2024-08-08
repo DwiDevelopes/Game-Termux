@@ -125,7 +125,7 @@ case $option in
 	"game dwi bakti 11")
 	echo "Press CTRL + c to Exit this game" | lolcat -a
 	read -p "Press [ENTER] to Start the Game: " | lolcat -a
-	Overkill
+	overkill
 	
 ;;
 	"game dwi bakti 12")
