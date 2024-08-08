@@ -236,7 +236,9 @@ case $option in
         echo "saya akan berusaha membantu orang lain di saat muda mulai dari database hingga membantu orang lain dengan hack dikala itu saya sangat susah mendapatkan uang" | lolcat -as 100
 	echo "Masa Berfikir : " | lolcat
         echo "saya mulai berfikir banyak hal tentang mencari uang dengan sangat keji hingga sampai pernah hack data dan menjual ke dark web dikala itu sangat sulit mendapatkan uang" | lolcat -as 100
-	echo "Masa Berfikir : " | lolcat
+	echo "Masa muali mengerti : " | lolcat
+        echo "masa itu banyak teman saya yang kena tangkap dan di bunuh itu membuat saya sangat sedih dan saya sadar lebih baik kita menjadi baik dari pada menjadi penjahat tanpa sebab" | lolcat -as 100
+	echo " Bersambung update patch berikutnya " | lolcat
 	break
 ;;
 	"cek si pembuat")
