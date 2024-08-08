@@ -4,7 +4,7 @@
 
 
 
-echo -e "\e[032m" "saya mohon jangan copy project saya ini kalau kalian mau copy bayar 25rb"
+echo -e "\e[032m" "saya mohon jangan copy project saya ini kalau kalian mau copy bayar 25rb hehe"
 
 
 clear
