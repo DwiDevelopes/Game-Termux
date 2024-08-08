@@ -107,7 +107,7 @@ visit : https://linkr.bio/BangRoy.go.id
 <br></br>
 ```git clone https://github.com/DwiDevelopes/Game-Termux/```
 <br><br>
-```cd Termux-Games```
+```cd Game-Termux```
 <br><br>
 ```chmod +x *```
 <br><br>
@@ -117,7 +117,7 @@ visit : https://linkr.bio/BangRoy.go.id
 
 ## instal full pack 🩻:
 <br>
-pkg install && pkg update && pkg install git && pkg install python && pkg install git -y && git clone https://github.com/DwiDevelopes/Game-Termux.git && cd Termux-Games && chmod +x * && bash install.sh
+pkg install && pkg update && pkg install git && pkg install python && pkg install git -y && git clone https://github.com/DwiDevelopes/Game-Termux.git && cd Game-Termux && chmod +x * && bash install.sh
 </br>
 
 ## Run🏃🏻‍♂️:
