@@ -118,93 +118,93 @@ case $option in
 	./2048
 ;;
 	"game dwi bakti 10")
-	echo "Press Capital Q to exit the game." | lolcat -a
+	echo "Press CTRL + c to Exit this game" | lolcat -a
 	read -p "Press [ENTER] to Start the Game: " | lolcat -a
 	nudoku
 ;;
 	"game dwi bakti 11")
-	echo "Press Capital Q to exit the game." | lolcat -a
+	echo "Press CTRL + c to Exit this game" | lolcat -a
 	read -p "Press [ENTER] to Start the Game: " | lolcat -a
 	Overkill
 	
 ;;
 	"game dwi bakti 12")
-	echo "Press Capital Q to exit the game." | lolcat -a
+	echo "Press CTRL + c to Exit this game" | lolcat -a
 	read -p "Press [ENTER] to Start the Game: " | lolcat -a
 	2048
 
 ;;
 	"game dwi bakti 13")
-	echo "Press Capital Q to exit the game." | lolcat -a
+	echo "Press CTRL + c to Exit this game" | lolcat -a
 	read -p "Press [ENTER] to Start the Game: " | lolcat -a
 	brogue
 
 
 ;;
 	"game dwi bakti 14")
-	echo "Press Capital Q to exit the game." | lolcat -a
+	echo "Press CTRL + c to Exit this game" | lolcat -a
 	read -p "Press [ENTER] to Start the Game: " | lolcat -a
 	phear
 
 
 ;;
 	"game dwi bakti 15")
-	echo "Press Capital Q to exit the game." | lolcat -a
+	echo "Press CTRL + c to Exit this game" | lolcat -a
 	read -p "Press [ENTER] to Start the Game: " | lolcat -a
 	curseofwar
 
 ;;
 	"game dwi bakti 16")
-	echo "Press Capital Q to exit the game." | lolcat -a
+	echo "Press CTRL + c to Exit this game" | lolcat -a
 	read -p "Press [ENTER] to Start the Game: " | lolcat -a
 	csol
 
 ;;
 	"game dwi bakti 17")
-	echo "Press Capital Q to exit the game." | lolcat -a
+	echo "Press CTRL + c to Exit this game" | lolcat -a
 	read -p "Press [ENTER] to Start the Game: " | lolcat -a
 	dopewars
 
 ;;
 	"game dwi bakti 18")
-	echo "Press Capital Q to exit the game." | lolcat -a
+	echo "Press CTRL + c to Exit this game" | lolcat -a
 	read -p "Press [ENTER] to Start the Game: " | lolcat -a
 	gnugo
 
 ;;
 	"game dwi bakti 19")
-	echo "Press Capital Q to exit the game." | lolcat -a
+	echo "Press CTRL + c to Exit this game" | lolcat -a
 	read -p "Press [ENTER] to Start the Game: " | lolcat -a
 	gnuski
 
 
 ;;
 	"game dwi bakti 20")
-	echo "Press Capital Q to exit the game." | lolcat -a
+	echo "Press CTRL + c to Exit this game" | lolcat -a
 	read -p "Press [ENTER] to Start the Game: " | lolcat -a
 	moria
 
 ;;
 	"game dwi bakti 21")
-	echo "Press Capital Q to exit the game." | lolcat -a
+	echo "Press CTRL + c to Exit this game" | lolcat -a
 	read -p "Press [ENTER] to Start the Game: " | lolcat -a
 	npush
 
 ;;
 	"game dwi bakti 22")
-	echo "Press Capital Q to exit the game." | lolcat -a
+	echo "Press CTRL + c to Exit this game" | lolcat -a
 	read -p "Press [ENTER] to Start the Game: " | lolcat -a
 	robotfindskitten
 
 ;;
 	"game dwi bakti 23")
-	echo "Press Capital Q to exit the game." | lolcat -a
+	echo "Press CTRL + c to Exit this game" | lolcat -a
 	read -p "Press [ENTER] to Start the Game: " | lolcat -a
 	ttysolitaire
 
 ;;
 	"game dwi bakti 24")
-	echo "Press Capital Q to exit the game." | lolcat -a
+	echo "Press CTRL + c to Exit this game" | lolcat -a
 	read -p "Press [ENTER] to Start the Game: " | lolcat -a
 	myman
 
