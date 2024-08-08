@@ -74,7 +74,7 @@ Website🌎: https://linkr.bio/BangRoy.go.id <br>
 
 Tiktok 🤩: https://www.Tiktok.com/@Royhtml <br>
 
-Whatsapp 😏: https://wa.me/+6289652969323 <br>
+Whatsapp 🫡: https://wa.me/+6289652969323 <br>
 
 Telegram 😏: https://t.me/@BangRoy78 <br>
 
