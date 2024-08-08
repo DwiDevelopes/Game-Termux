@@ -5,7 +5,7 @@ while  (($n < 3))
 do
 clear
 
-echo "😭😖😲🫠🙃😜😫Play Now 😊😁😭😖😲🫠🙃😜😫😯😣" | lolcat -s 100000 
+echo "😭😖😲🫠🙃😜😫     PLAY NOW      😲🫠🙃😜😫😯😣" | lolcat -s 100000 
 echo "▄▄▄█████▓▓█████  ██▀███   ███▄ ▄███▓ █    ██ ▒██   ██▒" | lolcat -s 100000 
 echo "▓  ██▒ ▓▒▓█   ▀ ▓██ ▒ ██▒▓██▒▀█▀ ██▒ ██  ▓██▒▒▒ █ █ ▒░" | lolcat -s 100000
 echo "▒ ▓██░ ▒░▒███   ▓██ ░▄█ ▒▓██    ▓██░▓██  ▒██░░░  █   ░" | lolcat -s 100000
@@ -25,27 +25,41 @@ echo "   ░   ░   ▒   ▒▒ ░░  ░      ░ ░ ░  ░░ ░▒  �
 echo " ░ ░   ░   ░   ▒   ░      ░      ░   ░  ░  ░          " | lolcat -s 100000
 echo "       ░       ░  ░       ░      ░  ░      ░          " | lolcat -s 100000
 echo "       ░       ░  ░       ░      ░  ░      ░          " | lolcat -s 100000
-echo "🩻🩻🩻🩻🩻🩻🩻Play🩻🩻🩻🩻🩻🩻🩻🩻🩻🩻🩻🩻🩻" | lolcat -s 100000
-echo "------------------------------------------------------" | lolcat
-echo "-----------{ Website: https://linkr.bio/BangRoy.go.id }------------" | lolcat -as 50
-echo "-----------Game Tersebut Dilindungi Oleh Development Bernama dwi bakti n dev------------" | lolcat -as 50
-echo "-----------Game Tersebut Di buat Oleh Orang Indonesia dan dilindungi hak cipta------------" | lolcat -as 50
-echo "------------------------------------------------------" | lolcat 
+echo "🩻🩻🩻🩻🩻     Dwi Bakti Nugroho  🩻🩻🩻🩻🩻🩻🩻" | lolcat -s 100000
+echo "----------------------Royhtml-------------------------" | lolcat
+echo "-----{ Website: https://linkr.bio/BangRoy.go.id }-----" | lolcat -as 40
+echo "---Game Tersebut Dilindungi Oleh dwi bakti n dev------" | lolcat -as 40
+echo "------Game dilindungi hak cipta dwi bakti n dev-------" | lolcat -as 40
+echo "---------------------💕💕----------------------------" | lolcat 
 
 
-echo "[1]  Moon-buggy " | lolcat -as 1000 
-echo "[2]  Tetris " | lolcat -as 1000
-echo "[3]  Pacman " | lolcat -as 1000
-echo "[4]  Space- Invaders " | lolcat -as 1000
-echo "[5]  Snake-Game " | lolcat -as 1000
-echo "[6]  Greed " | lolcat -as 1000
-echo "[7]  Nethack " | lolcat -as 1000
-echo "[8]  Hangman " | lolcat -as 1000
-echo "[9]  2048 " | lolcat -as 1000
-echo "[10] Sudoku " | lolcat -as 1000
-echo "[0]  Enable Arrow Keys " | lolcat -as 1000
-echo "[a]  About me " | lolcat -as 1000
-echo "[e]  EXIT "  | lolcat -as 1000
+echo "[game dwi bakti 1]  Moon-buggy " | lolcat -as 1000 
+echo "[game dwi bakti 2]  Tetris " | lolcat -as 1000
+echo "[game dwi bakti 3]  Pacman " | lolcat -as 1000
+echo "[game dwi bakti 4]  Space- Invaders " | lolcat -as 1000
+echo "[game dwi bakti 5]  Snake-Game " | lolcat -as 1000
+echo "[game dwi bakti 6]  Greed " | lolcat -as 1000
+echo "[game dwi bakti 7]  Nethack " | lolcat -as 1000
+echo "[game dwi bakti 8]  Hangman " | lolcat -as 1000
+echo "[game dwi bakti 9]  2048 " | lolcat -as 1000
+echo "[game dwi bakti 10] nudoku " | lolcat -as 1000
+echo "[game dwi bakti 11] Overkill " | lolcat -as 1000
+echo "[game dwi bakti 12] 2048 ke 2 " | lolcat -as 1000
+echo "[game dwi bakti 13] brogue " | lolcat -as 1000
+echo "[game dwi bakti 14] phear " | lolcat -as 1000
+echo "[game dwi bakti 15] curseofwar " | lolcat -as 1000
+echo "[game dwi bakti 16] csol " | lolcat -as 1000
+echo "[game dwi bakti 17] dopewars " | lolcat -as 1000
+echo "[game dwi bakti 18] gnugo " | lolcat -as 1000
+echo "[game dwi bakti 19] gnuski " | lolcat -as 1000
+echo "[game dwi bakti 20] moria " | lolcat -as 1000
+echo "[game dwi bakti 21] npush " | lolcat -as 1000
+echo "[game dwi bakti 22] robotfindskitten " | lolcat -as 1000
+echo "[game dwi bakti 23] ttysolitaire " | lolcat -as 1000
+echo "[game dwi bakti 24] myman " | lolcat -as 1000
+echo "[keterangan Dwi bakti N Dev ]  Ayo Lihat " | lolcat -as 1000
+echo "[cek si pembuat]  Cek Keterangan Saya " | lolcat -as 1000
+echo "[kembali]  KELUAR "  | lolcat -as 1000
 
 
 
@@ -120,84 +134,84 @@ case $option in
 	2048
 
 ;;
-	"game dwi bakti 12")
+	"game dwi bakti 13")
 	echo "Press Capital Q to exit the game." | lolcat -a
 	read -p "Press [ENTER] to Start the Game: " | lolcat -a
 	brogue
 
 
 ;;
-	"game dwi bakti 13")
+	"game dwi bakti 14")
 	echo "Press Capital Q to exit the game." | lolcat -a
 	read -p "Press [ENTER] to Start the Game: " | lolcat -a
 	phear
 
 
 ;;
-	"game dwi bakti 14")
+	"game dwi bakti 15")
 	echo "Press Capital Q to exit the game." | lolcat -a
 	read -p "Press [ENTER] to Start the Game: " | lolcat -a
 	curseofwar
 
 ;;
-	"game dwi bakti 15")
+	"game dwi bakti 16")
 	echo "Press Capital Q to exit the game." | lolcat -a
 	read -p "Press [ENTER] to Start the Game: " | lolcat -a
 	csol
 
 ;;
-	"game dwi bakti 16")
+	"game dwi bakti 17")
 	echo "Press Capital Q to exit the game." | lolcat -a
 	read -p "Press [ENTER] to Start the Game: " | lolcat -a
 	dopewars
 
 ;;
-	"game dwi bakti 17")
+	"game dwi bakti 18")
 	echo "Press Capital Q to exit the game." | lolcat -a
 	read -p "Press [ENTER] to Start the Game: " | lolcat -a
 	gnugo
 
 ;;
-	"game dwi bakti 18")
+	"game dwi bakti 19")
 	echo "Press Capital Q to exit the game." | lolcat -a
 	read -p "Press [ENTER] to Start the Game: " | lolcat -a
 	gnuski
 
 
 ;;
-	"game dwi bakti 19")
+	"game dwi bakti 20")
 	echo "Press Capital Q to exit the game." | lolcat -a
 	read -p "Press [ENTER] to Start the Game: " | lolcat -a
 	moria
 
 ;;
-	"game dwi bakti 20")
+	"game dwi bakti 21")
 	echo "Press Capital Q to exit the game." | lolcat -a
 	read -p "Press [ENTER] to Start the Game: " | lolcat -a
 	npush
 
 ;;
-	"game dwi bakti 21")
+	"game dwi bakti 22")
 	echo "Press Capital Q to exit the game." | lolcat -a
 	read -p "Press [ENTER] to Start the Game: " | lolcat -a
 	robotfindskitten
 
 ;;
-	"game dwi bakti 22")
+	"game dwi bakti 23")
 	echo "Press Capital Q to exit the game." | lolcat -a
 	read -p "Press [ENTER] to Start the Game: " | lolcat -a
 	ttysolitaire
 
 ;;
-	"game dwi bakti 23")
+	"game dwi bakti 24")
 	echo "Press Capital Q to exit the game." | lolcat -a
 	read -p "Press [ENTER] to Start the Game: " | lolcat -a
 	myman
 
 ;;
 	"keterangan dwi bakti") 
-	echo "keterangan Terlengkap     " | lolcat -s 10000
-	echo "Game ini di buat oeleh orang indonesia yang bernama dwi bakti n dev dan dilindungi oleh hak cipta" | lolcat -s 10000
+	echo "keterangan Dwi bakti N Dev    " | lolcat -s 10000
+	echo "Game ini di buat oeleh orang indonesia yang bernama dwi bakti n dev dan dilindungi oleh hak cipta dan memiliki tiktok yang bernama _Royhtml_" | lolcat -s 10000
 	break
 ;;
 	"cek si pembuat")
