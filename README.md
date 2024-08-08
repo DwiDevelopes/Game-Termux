@@ -144,6 +144,9 @@ visit : https://linkr.bio/BangRoy.go.id
 <b>Langkah 7 : kalian install games pkg patch nya dengan kata pemograman _bash games.sh_</b>
 <b>Langkah 8 : Langkah Terakhir kalian memain kan game nya dengan memsukan kata perintah _game dwi bakti 1_ untuk memainkan game tersebut kalian cukup mengikuti kata code []</b>
 
+## Tutorial Install 🐼💬:
+
+<b>Visit : https://vt.tiktok.com/ZS2JbgPBJ/</b>
 
 ## instal full pack 🩻:
 <br>
