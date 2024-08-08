@@ -92,8 +92,8 @@ visit : https://linkr.bio/BangRoy.go.id
 
 ## Install Termux📲:
 
-```pkg install```
-<br>
+```pkg install git```
+<br></br>
 ```pkg install git -y```
 <br>
 <br><br>
