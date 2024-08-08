@@ -104,6 +104,18 @@ figlet myman | lolcat && echo Installing..................... | lolcat
 echo -e "\e[032m"
 pkg install myman && apt install myman
 
+figlet go | lolcat && echo Installing..................... | lolcat
+echo -e "\e[032m"
+pkg install go && apt install go
+
+figlet curse of war | lolcat && echo Installing..................... | lolcat
+echo -e "\e[032m"
+pkg install curse of war && apt install curse of war
+
+figlet ski | lolcat && echo Installing..................... | lolcat
+echo -e "\e[032m"
+pkg install ski && apt install ski
+
 figlet Hangman | lolcat && echo Installing..................... | lolcat
 echo -e "\e[032m"
 pkg install git -y && echo -e "\e[032m" && git clone https://github.com/DwiDevelopes/HangmanPy.git
