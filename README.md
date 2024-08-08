@@ -159,5 +159,23 @@ pkg install && pkg update && pkg install git && pkg install python && pkg instal
 
 <br>
 
+## Information Update ❤️‍🔥:
+
+<b>di update patch kali ini sudah di perbarui ke versi terbaru kalian tinggal update saja</b>
+
+## Update install 😻:
+
+
+```apt update```
+<br></br>
+```cd Game-Termux```
+<br>
+<br><br>
+```bash install.sh```
+<br></br>
+```bash games.sh```
+<br>
+<br>
+
 # License 🤑:
 <br> Penginstallan dan pembuatan ini di lindungi oleh pembuat jangan kalian ambil dan copy right dalam pembuatan yang development buat</br>
