@@ -198,4 +198,6 @@ pkg install && pkg update && pkg install git && pkg install python && pkg instal
 
 <h6>AI TESTIMONIAL GOOGLE</h6>
 
+<img src="https://techeela.com/wp-content/uploads/2024/01/What-is-Google-Gemini-AI-Chatbot-All-You-Need-to-Know.jpg"</img>
+
 <br>Testimonial Demo Come Download Source Ai Google : https://ai-google.vercel.app/<br>
