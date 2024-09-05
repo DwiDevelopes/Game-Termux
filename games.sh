@@ -7,7 +7,7 @@ clear
 
 echo "😭😖😲🫠🙃😜😫     PLAY NOW      😲🫠🙃😜😫😯😣" | lolcat -s 100000 -e "\033[0;31mWARNA MERAH"
 echo "______________________________________________________" | lolcat -s 100000 -e "\033[0;31mWARNA MERAH"
-echo "                 Game Termux V2.0.1                   " | lolcat -s 100000 -e "\033[0;31mWARNA MERAH"
+echo "                 Game Termux V2.2.1                   " | lolcat -s 100000 -e "\033[0;31mWARNA MERAH"
 echo "                                                      " | lolcat -s 100000 -e "\033[0;31mWARNA MERAH"
 echo " ______   ____   ____    __    ___          |   /     " | lolcat -s 100000 -e "\033[0;31mWARNA MERAH"
 echo "   |      |      |   |   |   \/  |   |    | | /       " | lolcat -s 100000 -e "\033[0;31mWARNA MERAH"
