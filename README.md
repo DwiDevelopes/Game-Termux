@@ -180,7 +180,7 @@ pkg install && pkg update && pkg install git && pkg install python && pkg instal
 ```bash games.sh```
 <br>
 <br>
-# Pasal Melanggar Hak Cipta Dari Peraturan Indonesia Yang Berlaku :
+# Pasal Melanggar Hak Cipta Dari Peraturan Indonesia Yang Berlaku📛 :
 
 <b>Beberapa pasal yang mengatur tentang pelanggaran hak cipta di Indonesia, yaitu:<b> 
  
