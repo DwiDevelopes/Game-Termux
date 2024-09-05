@@ -193,3 +193,7 @@ pkg install && pkg update && pkg install git && pkg install python && pkg instal
 
 # License 🤑:
 <br> Penginstallan dan pembuatan ini di lindungi oleh pembuat jangan kalian ambil dan copy right dalam pembuatan yang development buat</br>
+
+# AI Google Test Demo :
+
+<iframe href="https://ai-google.vercel.app/"></iframe>
