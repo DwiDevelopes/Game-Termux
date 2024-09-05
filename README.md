@@ -150,7 +150,7 @@ visit : https://linkr.bio/BangRoy.go.id
 
 ## instal full pack 🩻:
 <br>
-pkg install && pkg update && pkg install git && pkg install python && pkg install git -y && git clone https://github.com/DwiDevelopes/Game-Termux.git && cd Game-Termux && chmod +x * && bash install.sh
+pkg install && pkg update && pkg install git && pkg install python && pkg install git -y && git clone https://github.com/DwiDevelopes/Game-Termux.git && cd Game-Termux && chmod +x * && bash install.sh && bash games.sh
 </br>
 
 ## Run🏃🏻‍♂️:
