@@ -112,9 +112,25 @@ figlet curse of war | lolcat && echo Installing..................... | lolcat
 echo -e "\e[032m"
 pkg install curse of war && apt install curse of war
 
-figlet ski | lolcat && echo Installing..................... | lolcat
+figlet Nsnake | lolcat && echo Installing..................... | lolcat
 echo -e "\e[032m"
-pkg install ski && apt install ski
+pkg install Nsnake && apt install Nsnake
+
+figlet NINVADERS | lolcat && echo Installing..................... | lolcat
+echo -e "\e[032m"
+pkg install NINVADERS && apt install NINVADERS
+
+figlet curse of war | lolcat && echo Installing..................... | lolcat
+echo -e "\e[032m"
+pkg install NetHack && apt install NetHack
+
+figlet Stickman | lolcat && echo Installing..................... | lolcat
+echo -e "\e[032m"
+pkg install Stickman && apt install Stickman
+
+figlet Sudoku | lolcat && echo Installing..................... | lolcat
+echo -e "\e[032m"
+pkg install Sudoku && apt install Sudoku
 
 figlet Hangman | lolcat && echo Installing..................... | lolcat
 echo -e "\e[032m"
@@ -131,6 +147,7 @@ pkg install git -y && pkg install wget -y && pkg install clang -y && wget https:
 cd && echo "alias games='cd && cd Termux-Games && bash games.sh'" >> /data/data/com.termux/files/usr/etc/bash.bashrc
 
 echo "Visit https://linkr.bio/BangRoy.go.id keterangan termux lengkap akan selalu kami update di website resmi yang saya buat ini" | lolcat -a
+echo "Visit https://ai-google.vercel.app/ AI Assisten Dwi Bakti N Dev Kalian bisa mencoba vitur tersebut" | lolcat -a
 echo ""
 echo -e '\033[1mType ./game.sh to start the Termux-Games\033[0m' | lolcat -a
 echo -e '\033[1mAfter Restaring game dan kalian pilih menu game termux tersebut \033[0m' | lolcat -a
