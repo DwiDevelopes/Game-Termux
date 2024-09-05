@@ -139,14 +139,14 @@ visit : https://linkr.bio/BangRoy.go.id
 <br>
 ## Langkah Install yang sangat simple dengan memakai step 😎:
 
-<b>Langkah 1 : kalian install _pkg install_ langkah selanjutnya</b>
-<b>Langkah 2 : kalian update terlebih dahulu _pkg update_ langkah selanjutnya</b>
-<b>Langkah 3 : kalian install github terlebih dahulu dengan source _pkg install git_ langkah selanjutnya</b>
-<b>Langkah 4 : kalian masukan domain github saya dengan clone _git clone https://github.com/DwiDevelopes/Game-Termux.git_ langkah selanjutnya</b>
-<b>Langkah 5 : kalian jalankan kaset tersebut untuk memainkan game saya dengan kata perintah _cd Game-Termux_ langkah selanjutnya</b>
-<b>Langkah 6 : kalian install patch game nya dengan memasukan kata pemograman  _bash install.sh_ langkah selanjutnya</b>
-<b>Langkah 7 : kalian install games pkg patch nya dengan kata pemograman _bash games.sh_</b>
-<b>Langkah 8 : Langkah Terakhir kalian memain kan game nya dengan memsukan kata perintah _game dwi bakti 1_ untuk memainkan game tersebut kalian cukup mengikuti kata code []</b>
+<br>Langkah 1 : kalian install _pkg install_ langkah selanjutnya</br>
+<br>Langkah 2 : kalian update terlebih dahulu _pkg update_ langkah selanjutnya</br>
+<br>Langkah 3 : kalian install github terlebih dahulu dengan source _pkg install git_ langkah selanjutnya</br>
+<br>Langkah 4 : kalian masukan domain github saya dengan clone _git clone https://github.com/DwiDevelopes/Game-Termux.git_ langkah selanjutnya</br>
+<br>Langkah 5 : kalian jalankan kaset tersebut untuk memainkan game saya dengan kata perintah _cd Game-Termux_ langkah selanjutnya</br>
+<br>Langkah 6 : kalian install patch game nya dengan memasukan kata pemograman  _bash install.sh_ langkah selanjutnya</br>
+<br>Langkah 7 : kalian install games pkg patch nya dengan kata pemograman _bash games.sh_</br>
+<br>Langkah 8 : Langkah Terakhir kalian memain kan game nya dengan memsukan kata perintah _game dwi bakti 1_ untuk memainkan game tersebut kalian cukup mengikuti kata code [ ]</br>
 
 ## Tutorial Install 🐼💬:
 
