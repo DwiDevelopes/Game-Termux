@@ -196,6 +196,6 @@ pkg install && pkg update && pkg install git && pkg install python && pkg instal
 
 # AI Google Test Demo :
 
-<iframe src="https://ai-google.vercel.app/"></iframe>
+<h6>AI TESTIMONIAL GOOGLE</h6>
 
-<br>Testimonial Demo Come Download Source Ai Google<br>
+<br>Testimonial Demo Come Download Source Ai Google : https://ai-google.vercel.app/<br>
