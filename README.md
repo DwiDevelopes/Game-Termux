@@ -83,9 +83,10 @@ Telegram 😏: https://t.me/@BangRoy78 <br>
   <img alt="Smiley face" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh26zfjuyQG_EitmqyUbQYOC9feso63rYpSoeaupy_5r9_a7YCTbeWiVNFyDiCqMnjL_snxg-GgTWZMxqWVcgck5xh53cU7_WsXS5YRv_Q8XcJSBz-3E9U9cDfvnU3AqfA6-XNrKTpO4YBN/s1600/how-to-play-games-in-termux.png" style="border-radius:20%;">
 </p>
 <br>
+
 # Join Comunity Termux Chanel :
 
-Come Join Update Games Termux : https://whatsapp.com/channel/0029VajtSTTLikgJKxcDa01v
+<br>Come Join Update Games Termux : https://whatsapp.com/channel/0029VajtSTTLikgJKxcDa01v<br>
 
 ## One command Information detail📥:
 
