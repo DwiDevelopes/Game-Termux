@@ -5,27 +5,27 @@ while  (($n < 3))
 do
 clear
 
-echo "😭😖😲🫠🙃😜😫     PLAY NOW      😲🫠🙃😜😫😯😣" | lolcat -s 100000 
-echo "______________________________________________________" | lolcat -s 100000 
-echo "                 Game Termux V2.0.1                   " | lolcat -s 100000
-echo "                                                      " | lolcat -s 100000
-echo " ______   ____   ____    __    ___          |   /     " | lolcat -s 100000
-echo "   |      |      |   |   |   \/  |   |    | | /       " | lolcat -s 100000
-echo "   |      |___   __  |   |       |   |    | |         " | lolcat -s 100000
-echo "   |      |      |   \   |       |   |    | | \       " | lolcat -s 100000
-echo "   |      |___   |    \  |       |   | ___| |  \      " | lolcat -s 100000
-echo "                                                      " | lolcat -s 100000
-echo "  _____      😎    __    ___    ____                  " | lolcat -s 90000
-echo " |          / \    |   \/  |    |                     " | lolcat -s 100000
-echo " |  _ _   /  _  \  |       |    |                     " | lolcat -s 100000
-echo " |    |  /       \ |       |    |___                  " | lolcat -s 100000
-echo " |____|            |       |    |                     " | lolcat -s 100000
-echo "                                |___                  " | lolcat -s 100000
-echo "                                                      " | lolcat -s 100000
-echo "                                                      " | lolcat -s 100000
-echo "                                                      " | lolcat -s 100000
-echo "______________________________________________________" | lolcat -s 100000
-echo "🩻🩻🩻🩻🩻     Dwi Bakti Nugroho  🩻🩻🩻🩻🩻🩻🩻" | lolcat -s 100000
+echo "😭😖😲🫠🙃😜😫     PLAY NOW      😲🫠🙃😜😫😯😣" | lolcat -s 100000 -e "\033[0;31mWARNA MERAH"
+echo "______________________________________________________" | lolcat -s 100000 -e "\033[0;31mWARNA MERAH"
+echo "                 Game Termux V2.0.1                   " | lolcat -s 100000 -e "\033[0;31mWARNA MERAH"
+echo "                                                      " | lolcat -s 100000 -e "\033[0;31mWARNA MERAH"
+echo " ______   ____   ____    __    ___          |   /     " | lolcat -s 100000 -e "\033[0;31mWARNA MERAH"
+echo "   |      |      |   |   |   \/  |   |    | | /       " | lolcat -s 100000 -e "\033[0;31mWARNA MERAH"
+echo "   |      |___   __  |   |       |   |    | |         " | lolcat -s 100000 -e "\033[0;31mWARNA MERAH"
+echo "   |      |      |   \   |       |   |    | | \       " | lolcat -s 100000 -e "\033[0;31mWARNA MERAH"
+echo "   |      |___   |    \  |       |   | ___| |  \      " | lolcat -s 100000 -e "\033[0;31mWARNA MERAH"
+echo "                                                      " | lolcat -s 100000 -e "\033[0;31mWARNA MERAH"
+echo "  _____      😎    __    ___    ____                  " | lolcat -s 10000 -e "\033[0;31mWARNA MERAH"
+echo " |          / \    |   \/  |    |                     " | lolcat -s 100000 -e "\033[1;37mWARNA PUTIH"
+echo " |  _ _   /  _  \  |       |    |                     " | lolcat -s 100000 -e "\033[1;37mWARNA PUTIH"
+echo " |    |  /       \ |       |    |___                  " | lolcat -s 100000 -e "\033[1;37mWARNA PUTIH"
+echo " |____|            |       |    |                     " | lolcat -s 100000 -e "\033[1;37mWARNA PUTIH"
+echo "                                |___                  " | lolcat -s 100000 -e "\033[1;37mWARNA PUTIH"
+echo "                                                      " | lolcat -s 100000 -e "\033[1;37mWARNA PUTIH"
+echo "                                                      " | lolcat -s 100000 -e "\033[1;37mWARNA PUTIH"
+echo "                                                      " | lolcat -s 100000 -e "\033[1;37mWARNA PUTIH"
+echo "______________________________________________________" | lolcat -s 100000 -e "\033[1;37mWARNA PUTIH"
+echo "🩻🩻🩻🩻🩻     Dwi Bakti Nugroho  🩻🩻🩻🩻🩻🩻🩻" | lolcat -s 100000 -e "\033[1;37mWARNA PUTIH"
 echo "----------------------Royhtml-------------------------" | lolcat
 echo "-----{ Website: https://linkr.bio/BangRoy.go.id }-----" | lolcat -as 50
 echo "---Game Tersebut Dilindungi Oleh dwi bakti n dev------" | lolcat -as 50
@@ -56,11 +56,18 @@ echo "[game dwi bakti 20] moria " | lolcat -as 1000
 echo "[game dwi bakti 21] npush " | lolcat -as 1000
 echo "[game dwi bakti 22] robotfindskitten " | lolcat -as 1000
 echo "[game dwi bakti 23] ttysolitaire " | lolcat -as 1000
-echo "[game dwi bakti 24] go " | lolcat -as 1000
-echo "[game dwi bakti 25] ski " | lolcat -as 1000
-echo "[game dwi bakti 26] curse of war " | lolcat -as 1000
+echo "[game dwi bakti 24] myman " | lolcat -as 1000
+echo "[game dwi bakti 25] go " | lolcat -as 1000
+echo "[game dwi bakti 26] ski " | lolcat -as 1000
+echo "[game dwi bakti 27] curse of war " | lolcat -as 1000
+echo "[game dwi bakti 28] Nsnake " | lolcat -as 1000
+echo "[game dwi bakti 29] NINVADERS " | lolcat -as 1000
+echo "[game dwi bakti 30] NetHack " | lolcat -as 1000
+echo "[game dwi bakti 31] Stickman " | lolcat -as 1000
+echo "[game dwi bakti 32] Sudoku " | lolcat -as 1000
 echo "[keterangan Dwi bakti N Dev ]  Ayo Lihat " | lolcat -as 1000
 echo "[cek si pembuat]  Cek Keterangan Saya " | lolcat -as 1000
+echo "[hak cipta]  Di Lindungi Hak Cipta " | lolcat -as 1000
 echo "[kembali]  KELUAR "  | lolcat -as 1000
 
 
@@ -226,6 +233,31 @@ case $option in
 	echo "Press CTRL + c to Exit this game" | lolcat -a
 	read -p "Press [ENTER] to Start the Game: " | lolcat -a
 	curse of war
+  ;;
+	"game dwi bakti 28")
+	echo "Press CTRL + c to Exit this game" | lolcat -a
+	read -p "Press [ENTER] to Start the Game: " | lolcat -a
+	Nsnake
+  ;;
+	"game dwi bakti 29")
+	echo "Press CTRL + c to Exit this game" | lolcat -a
+	read -p "Press [ENTER] to Start the Game: " | lolcat -a
+	NINVADERS
+  ;;
+	"game dwi bakti 30")
+	echo "Press CTRL + c to Exit this game" | lolcat -a
+	read -p "Press [ENTER] to Start the Game: " | lolcat -a
+	NetHack
+  ;;
+	"game dwi bakti 31")
+	echo "Press CTRL + c to Exit this game" | lolcat -a
+	read -p "Press [ENTER] to Start the Game: " | lolcat -a
+        Stickman
+  ;;
+	"game dwi bakti 32")
+	echo "Press CTRL + c to Exit this game" | lolcat -a
+	read -p "Press [ENTER] to Start the Game: " | lolcat -a
+	Sudoku
 
 ;;
 	"keterangan dwi bakti") 
@@ -262,6 +294,21 @@ case $option in
 	echo "[Tiktok] = [www.Tiktok.com/@Royhtml] " | lolcat -as 50
         echo "[----------------Versi 2.0.1-------------------] " | lolcat -as 50
 	echo "[-----------------------------------------------------]" | lolcat -as 100
+	read -p "Press [ENTER] to continue: "
+ 
+;;
+	"hak cipta")
+	clear
+	echo "Hak Cipta Si Pembuat Dwi Bakti N Dev    " | lolcat -s 10000
+	echo "Beberapa pasal yang mengatur tentang pelanggaran hak cipta di Indonesia, yaitu : " | lolcat -s 10000
+	echo "Pasal 72 ayat (1) UU Hak Cipta, mengatur tentang pidana penjara minimal satu bulan dan/atau denda minimal Rp1.000.000 bagi pelaku yang tanpa hak mengumumkan atau memperbanyak suatu ciptaan 
+" | lolcat -as 100
+        echo "Pasal 112 UU Hak Cipta, mengatur tentang hukuman penjara maksimal dua tahun dan/atau denda maksimal Rp300.000.000 bagi pelaku yang tanpa hak melakukan perbuatan seperti yang dijelaskan dalam pasal 7 ayat 3 dan pasal 52 untuk penggunaan komersial 
+" | lolcat -as 100
+        echo "saya mulai berfikir banyak hal tentang mencari uang dengan sangat keji hingga sampai pernah hack data dan menjual ke dark web dikala itu sangat sulit mendapatkan uang" | lolcat -as 100
+        echo "Pasal 114 UU Hak Cipta, mengatur tentang denda maksimal Rp100.000.000 bagi pelaku yang sengaja mengetahui dan membiarkan penjualan dan/atau penggandaan barang hasil pelanggaran hak cipta di tempat perdagangan yang dikelolanya 
+" | lolcat -as 100
+	echo " Dilindungi Hak Cipta Jika kalian melanggar terima sendiri akibatnya " | lolcat
 	read -p "Press [ENTER] to continue: "
 
 ;;
