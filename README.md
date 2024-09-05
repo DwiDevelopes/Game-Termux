@@ -179,6 +179,17 @@ pkg install && pkg update && pkg install git && pkg install python && pkg instal
 ```bash games.sh```
 <br>
 <br>
+# Pasal Melanggar Hak Cipta Dari Peraturan Indonesia Yang Berlaku :
+
+<b>Beberapa pasal yang mengatur tentang pelanggaran hak cipta di Indonesia, yaitu:<b> 
+ 
+<br>🤠Pasal 72 ayat (1) UU Hak Cipta, mengatur tentang pidana penjara minimal satu bulan dan/atau denda minimal Rp1.000.000 bagi pelaku yang tanpa hak mengumumkan atau memperbanyak suatu ciptaan<br> 
+ 
+<br>🤖Pasal 112 UU Hak Cipta, mengatur tentang hukuman penjara maksimal dua tahun dan/atau denda maksimal Rp300.000.000 bagi pelaku yang tanpa hak melakukan perbuatan seperti yang dijelaskan dalam pasal 7 ayat 3 dan pasal 52 untuk penggunaan komersial<br> 
+ 
+<br>👺Pasal 114 UU Hak Cipta, mengatur tentang denda maksimal Rp100.000.000 bagi pelaku yang sengaja mengetahui dan membiarkan penjualan dan/atau penggandaan barang hasil pelanggaran hak cipta di tempat perdagangan yang dikelolanya<br> 
+ 
+<br>😈Pelaku pelanggaran hak cipta dapat dituntut secara pidana dan perdata. Penyelesaian sengketa di bidang hak cipta juga dapat dilakukan di luar pengadilan melalui arbitrase atau alternatif penyelesaian sengketa lainnya.<br>
 
 # License 🤑:
 <br> Penginstallan dan pembuatan ini di lindungi oleh pembuat jangan kalian ambil dan copy right dalam pembuatan yang development buat</br>
