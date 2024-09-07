@@ -170,14 +170,8 @@ pkg install && pkg update && pkg install git && pkg install python && pkg instal
 ## Update install 😻:
 
 
-```apt update```
+```pkg install && pkg update && pkg install git && pkg install python && pkg install git -y && git clone https://github.com/DwiDevelopes/Game-Termux.git && cd Game-Termux && chmod +x * && bash install.sh && bash games.sh```
 <br></br>
-```cd Game-Termux```
-<br>
-<br><br>
-```bash install.sh```
-<br></br>
-```bash games.sh```
 <br>
 <br>
 # Pasal Melanggar Hak Cipta Dari Peraturan Indonesia Yang Berlaku📛 :
