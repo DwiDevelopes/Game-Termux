@@ -159,6 +159,7 @@ pkg install && pkg update && pkg install git && pkg install python && pkg instal
 
 ## Run🏃🏻‍♂️:
 
+```cd Game-Termux```
 ```bash games.sh```
 
 <br>
