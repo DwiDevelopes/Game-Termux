@@ -170,7 +170,7 @@ pkg install && pkg update && pkg install git && pkg install python && pkg instal
 ## Update install 😻:
 
 
-```pkg install && pkg update && pkg install git && pkg install python && pkg install git -y && git clone https://github.com/DwiDevelopes/Game-Termux.git && cd Game-Termux && chmod +x * && bash install.sh && bash games.sh```
+```pkg install git && pkg install python && pkg install git -y && git clone https://github.com/DwiDevelopes/Game-Termux.git && cd Game-Termux && chmod +x * && bash install.sh && bash games.sh```
 <br></br>
 <br>
 <br>
