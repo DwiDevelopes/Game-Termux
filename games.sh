@@ -5,27 +5,27 @@ while  (($n < 3))
 do
 clear
 
-echo "😭😖😲🫠🙃😜😫     PLAY NOW      😲🫠🙃😜😫😯😣" | lolcat -s 100000 -e "\033[0;31mWARNA MERAH"
-echo "______________________________________________________" | lolcat -s 100000 -e "\033[0;31mWARNA MERAH"
-echo "                 Game Termux V2.2.1                   " | lolcat -s 100000 -e "\033[0;31mWARNA MERAH"
-echo "                                                      " | lolcat -s 100000 -e "\033[0;31mWARNA MERAH"
-echo " ______   ____   ____    __    ___          |   /     " | lolcat -s 100000 -e "\033[0;31mWARNA MERAH"
-echo "   |      |      |   |   |   \/  |   |    | | /       " | lolcat -s 100000 -e "\033[0;31mWARNA MERAH"
-echo "   |      |___   __  |   |       |   |    | |         " | lolcat -s 100000 -e "\033[0;31mWARNA MERAH"
-echo "   |      |      |   \   |       |   |    | | \       " | lolcat -s 100000 -e "\033[0;31mWARNA MERAH"
-echo "   |      |___   |    \  |       |   | ___| |  \      " | lolcat -s 100000 -e "\033[0;31mWARNA MERAH"
-echo "                                                      " | lolcat -s 100000 -e "\033[0;31mWARNA MERAH"
-echo "  _____      😎    __    ___    ____                  " | lolcat -s 10000 -e "\033[0;31mWARNA MERAH"
-echo " |          / \    |   \/  |    |                     " | lolcat -s 100000 -e "\033[1;37mWARNA PUTIH"
-echo " |  _ _   /  _  \  |       |    |                     " | lolcat -s 100000 -e "\033[1;37mWARNA PUTIH"
-echo " |    |  /       \ |       |    |___                  " | lolcat -s 100000 -e "\033[1;37mWARNA PUTIH"
-echo " |____|            |       |    |                     " | lolcat -s 100000 -e "\033[1;37mWARNA PUTIH"
-echo "                                |___                  " | lolcat -s 100000 -e "\033[1;37mWARNA PUTIH"
-echo "                                                      " | lolcat -s 100000 -e "\033[1;37mWARNA PUTIH"
-echo "                                                      " | lolcat -s 100000 -e "\033[1;37mWARNA PUTIH"
-echo "                                                      " | lolcat -s 100000 -e "\033[1;37mWARNA PUTIH"
-echo "______________________________________________________" | lolcat -s 100000 -e "\033[1;37mWARNA PUTIH"
-echo "🩻🩻🩻🩻🩻     Dwi Bakti Nugroho  🩻🩻🩻🩻🩻🩻🩻" | lolcat -s 100000 -e "\033[1;37mWARNA PUTIH"
+echo "😭😖😲🫠🙃😜😫     PLAY NOW      😲🫠🙃😜😫😯😣" | lolcat -s 100000 
+echo "______________________________________________________" | lolcat -s 100000 
+echo "                 Game Termux V2.2.1                   " | lolcat -s 100000 
+echo "                                                      " | lolcat -s 100000 
+echo " ______   ____   ____    __    ___          |   /     " | lolcat -s 100000 
+echo "   |      |      |   |   |   \/  |   |    | | /       " | lolcat -s 100000 
+echo "   |      |___   __  |   |       |   |    | |         " | lolcat -s 100000 
+echo "   |      |      |   \   |       |   |    | | \       " | lolcat -s 100000 
+echo "   |      |___   |    \  |       |   | ___| |  \      " | lolcat -s 100000 
+echo "                                                      " | lolcat -s 100000 
+echo "  _____      😎    __    ___    ____                  " | lolcat -s 10000 
+echo " |          / \    |   \/  |    |                     " | lolcat -s 100000 
+echo " |  _ _   /  _  \  |       |    |                     " | lolcat -s 100000 
+echo " |    |  /       \ |       |    |___                  " | lolcat -s 100000 
+echo " |____|            |       |    |                     " | lolcat -s 100000 
+echo "                                |___                  " | lolcat -s 100000 
+echo "                                                      " | lolcat -s 100000 
+echo "                                                      " | lolcat -s 100000 
+echo "                                                      " | lolcat -s 100000 
+echo "______________________________________________________" | lolcat -s 100000 
+echo "🩻🩻🩻🩻🩻     Dwi Bakti Nugroho  🩻🩻🩻🩻🩻🩻🩻" | lolcat -s 100000 
 echo "----------------------Royhtml-------------------------" | lolcat
 echo "-----{ Website: https://linkr.bio/BangRoy.go.id }-----" | lolcat -as 50
 echo "---Game Tersebut Dilindungi Oleh dwi bakti n dev------" | lolcat -as 50
