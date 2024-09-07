@@ -278,7 +278,7 @@ case $option in
 	echo "Mengingat Cerita : " | lolcat
         echo "masalah banyak sekali hampir membuat ku merasa muak dan gw pun memulai untuk melampiaskan ketakutan gw ini dengan belajar banyak hal dalam ilmu pengetahuan yang gw dapat selama ini dan membuka lembaran baru" | lolcat -as 100
 	echo " Bersambung update patch berikutnya " | lolcat
-	break
+	read -p "Press [ENTER] to continue: "
 ;;
 	"cek si pembuat")
 	clear
