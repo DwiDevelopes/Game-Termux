@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Configuration
+# Colors
 RED='\033[1;31m'
 GREEN='\033[1;32m'
 YELLOW='\033[1;33m'
@@ -11,11 +11,52 @@ NC='\033[0m'
 BOLD='\033[1m'
 UNDERLINE='\033[4m'
 
-# ASCII Art Banner
+# Animation
+spinner() {
+    local pid=$!
+    local delay=0.1
+    local spinstr='|/-\'
+    while [ "$(ps a | awk '{print $1}' | grep $pid)" ]; do
+        local temp=${spinstr#?}
+        printf " [%c] " "$spinstr"
+        local spinstr=$temp${spinstr%"$temp"}
+        sleep $delay
+        printf "\b\b\b\b\b"
+    done
+    printf "    \b\b\b\b"
+}
+
+# Check if package is installed
+check_installed() {
+    if [ -x "$(command -v $1)" ] || dpkg -l | grep -q "ii  $1 "; then
+        return 0
+    else
+        return 1
+    fi
+}
+
+# Install package with error handling
+install_pkg() {
+    echo -e "${YELLOW}Installing ${CYAN}$1${YELLOW}...${NC}"
+    if check_installed $1; then
+        echo -e "${GREEN}✓ Already installed: $1${NC}"
+        return 0
+    fi
+    
+    if pkg install $1 -y > /dev/null 2>&1; then
+        echo -e "${GREEN}✓ Successfully installed: $1${NC}"
+        return 0
+    else
+        echo -e "${RED}✗ Failed to install: $1${NC}"
+        return 1
+    fi
+}
+
+# Banner
 display_banner() {
-  clear
-  echo -e "${PURPLE}"
-  cat << "EOF"
+    clear
+    echo -e "${PURPLE}"
+    cat << "EOF"
   ████████╗███████╗██████╗ ███╗   ███╗██╗   ██╗██╗  ██╗
   ╚══██╔══╝██╔════╝██╔══██╗████╗ ████║╚██╗ ██╔╝╚██╗██╔╝
      ██║   █████╗  ██████╔╝██╔████╔██║ ╚████╔╝  ╚███╔╝ 
@@ -23,137 +64,165 @@ display_banner() {
      ██║   ███████╗██║  ██║██║ ╚═╝ ██║   ██║   ██╔╝ ██╗
      ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝   ╚═╝   ╚═╝  ╚═╝
 EOF
-  echo -e "${NC}"
-  echo -e "${CYAN}                   TERMUX GAME COLLECTION - BY DWI BAKTI N DEV${NC}"
-  echo -e "${YELLOW}══════════════════════════════════════════════════════════════════════${NC}"
-  echo -e "${RED}${BOLD}NOTE: Please don't copy this project without permission${NC}\n"
+    echo -e "${NC}"
+    echo -e "${CYAN}                   TERMUX GAME COLLECTION - INSTALLER${NC}"
+    echo -e "${YELLOW}══════════════════════════════════════════════════════════════════════${NC}"
+    echo -e "${BOLD}By Dwi Bakti N Dev | Version 3.0 | © 2023${NC}\n"
 }
 
-# Centered text with color
-center() {
-  termwidth=$(stty size | cut -d" " -f2)
-  padding="$(printf '%0.1s' ' '{1..500})"
-  printf "%*.*s ${BLUE}%s${NC} %*.*s\n" 0 "$(((termwidth-2-${#1})/2))" "$padding" "$1" 0 "$(((termwidth-1-${#1})/2))" "$padding"
+# Install dependencies
+install_dependencies() {
+    echo -e "${PURPLE}${BOLD}Installing Dependencies...${NC}"
+    
+    if ! install_pkg ruby; then
+        echo -e "${RED}Critical error: Ruby installation failed${NC}"
+        exit 1
+    fi
+    
+    echo -e "${YELLOW}Installing Lolcat...${NC}"
+    gem install lolcat > /dev/null 2>&1 &
+    spinner
+    if [ $? -eq 0 ]; then
+        echo -e "${GREEN}✓ Lolcat installed successfully${NC}"
+    else
+        echo -e "${RED}✗ Lolcat installation failed${NC}"
+    fi
+    
+    install_pkg figlet
+    install_pkg wget
+    install_pkg clang
+    install_pkg git
+    install_pkg python
+    
+    echo ""
 }
 
-# Installation header
-install_header() {
-  clear
-  display_banner
-  echo -e "${GREEN}${UNDERLINE}Installing Termux Games...${NC}\n"
+# Install all games
+install_all_games() {
+    # Classic Games
+    echo -e "${PURPLE}${BOLD}Installing Classic Games...${NC}"
+    install_pkg moon-buggy
+    install_pkg bastet
+    install_pkg pacman4console
+    install_pkg ninvaders
+    install_pkg nsnake
+    install_pkg greed
+    install_pkg nethack
+    install_pkg nudoku
+    
+    # Strategy Games
+    echo -e "\n${PURPLE}${BOLD}Installing Strategy Games...${NC}"
+    install_pkg curseofwar
+    install_pkg dopewars
+    install_pkg gnugo
+    install_pkg moria
+    
+    # Puzzle Games
+    echo -e "\n${PURPLE}${BOLD}Installing Puzzle Games...${NC}"
+    install_pkg 2048
+    install_pkg brogue
+    install_pkg phear
+    install_pkg gnuski
+    install_pkg npush
+    
+    # Arcade Games
+    echo -e "\n${PURPLE}${BOLD}Installing Arcade Games...${NC}"
+    install_pkg overkill
+    install_pkg csol
+    install_pkg robotfindskitten
+    install_pkg ttysolitaire
+    install_pkg myman
+    
+    # Additional Games
+    echo -e "\n${PURPLE}${BOLD}Installing Additional Games...${NC}"
+    install_pkg go
+    install_pkg sl
+    install_pkg cmatrix
+    install_pkg ninvaders
+    install_pkg moon-buggy
+    
+    # Special Installations
+    echo -e "\n${PURPLE}${BOLD}Special Installations...${NC}"
+    
+    # Hangman
+    echo -e "${YELLOW}Installing Hangman...${NC}"
+    if [ -d "HangmanPy" ]; then
+        echo -e "${GREEN}✓ Hangman already installed${NC}"
+    else
+        git clone https://github.com/DwiDevelopes/HangmanPy.git > /dev/null 2>&1 &
+        spinner
+        if [ -d "HangmanPy" ]; then
+            echo -e "${GREEN}✓ Hangman installed successfully${NC}"
+        else
+            echo -e "${RED}✗ Hangman installation failed${NC}"
+        fi
+    fi
+    
+    # 2048 from source
+    echo -e "\n${YELLOW}Building 2048 from source...${NC}"
+    if [ -f "2048" ]; then
+        echo -e "${GREEN}✓ 2048 already built${NC}"
+    else
+        wget https://raw.githubusercontent.com/mevdschee/2048.c/master/2048.c > /dev/null 2>&1
+        gcc -o 2048 2048.c > /dev/null 2>&1 &
+        spinner
+        if [ -f "2048" ]; then
+            echo -e "${GREEN}✓ 2048 built successfully${NC}"
+            rm 2048.c
+        else
+            echo -e "${RED}✗ 2048 build failed${NC}"
+        fi
+    fi
+    
+    # Create alias
+    echo -e "\n${YELLOW}Creating games alias...${NC}"
+    if grep -q "alias games=" /data/data/com.termux/files/usr/etc/bash.bashrc; then
+        echo -e "${GREEN}✓ Alias already exists${NC}"
+    else
+        echo "alias games='cd && cd Termux-Games && bash games.sh'" >> /data/data/com.termux/files/usr/etc/bash.bashrc
+        echo -e "${GREEN}✓ Alias created successfully${NC}"
+    fi
 }
 
-# Install package with status
-install_pkg() {
-  local pkg=$1
-  local name=$2
-  
-  echo -e "${YELLOW}Installing ${CYAN}${name}${YELLOW}...${NC}"
-  if pkg install "$pkg" -y >/dev/null 2>&1; then
-    echo -e "${GREEN}✓ ${name} installed successfully${NC}"
-  else
-    echo -e "${RED}✗ Failed to install ${name}${NC}"
-  fi
-  echo ""
-}
-
-# Main installation function
-install_games() {
-  install_header
-  
-  # Install dependencies first
-  echo -e "${PURPLE}Installing dependencies...${NC}"
-  install_pkg ruby "Ruby (for Lolcat)"
-  gem install lolcat >/dev/null 2>&1
-  install_pkg figlet "Figlet"
-  echo ""
-  
-  # Classic Games
-  echo -e "${PURPLE}Installing Classic Games...${NC}"
-  install_pkg bastet "Bastet (Tetris)"
-  install_pkg pacman4console "Pacman"
-  install_pkg moon-buggy "Moon-Buggy"
-  install_pkg ninvaders "Space Invaders"
-  install_pkg nsnake "Snake Game"
-  
-  # Strategy Games
-  echo -e "\n${PURPLE}Installing Strategy Games...${NC}"
-  install_pkg greed "Greed"
-  install_pkg nethack "Nethack"
-  install_pkg curseofwar "Curse of War"
-  install_pkg dopewars "Dope Wars"
-  
-  # Puzzle Games
-  echo -e "\n${PURPLE}Installing Puzzle Games...${NC}"
-  install_pkg nudoku "Sudoku"
-  install_pkg 2048 "2048"
-  install_pkg brogue "Brogue"
-  install_pkg phear "Phear"
-  
-  # Additional Games
-  echo -e "\n${PURPLE}Installing Additional Games...${NC}"
-  install_pkg overkill "Overkill"
-  install_pkg csol "CSOL"
-  install_pkg gnugo "Gnu Go"
-  install_pkg gnuski "Gnu Ski"
-  install_pkg moria "Moria"
-  install_pkg npush "Npush"
-  install_pkg robotfindskitten "Robot Finds Kitten"
-  install_pkg ttysolitaire "TTY Solitaire"
-  install_pkg myman "Myman"
-  install_pkg go "Go Game"
-  
-  # Special Installations
-  echo -e "\n${PURPLE}Special Installations...${NC}"
-  echo -e "${YELLOW}Installing Hangman...${NC}"
-  pkg install git -y && git clone https://github.com/DwiDevelopes/HangmanPy.git
-  echo -e "${GREEN}✓ Hangman installed successfully${NC}\n"
-  
-  echo -e "${YELLOW}Installing Python...${NC}"
-  pkg install python -y
-  echo -e "${GREEN}✓ Python installed successfully${NC}\n"
-  
-  echo -e "${YELLOW}Building 2048 from source...${NC}"
-  pkg install wget clang -y && wget https://raw.githubusercontent.com/mevdschee/2048.c/master/2048.c && gcc -o 2048 2048.c
-  echo -e "${GREEN}✓ 2048 built successfully${NC}\n"
-  
-  # Create alias
-  echo -e "${YELLOW}Creating games alias...${NC}"
-  echo "alias games='cd && cd Termux-Games && bash games.sh'" >> /data/data/com.termux/files/usr/etc/bash.bashrc
-  echo -e "${GREEN}✓ Alias created. You can now type 'games' to start.${NC}\n"
-}
-
-# Final message
-display_completion() {
-  clear
-  display_banner
-  echo -e "${GREEN}${BOLD}Installation Complete!${NC}\n"
-  
-  echo -e "${CYAN}Games successfully installed in your Termux.${NC}"
-  echo -e "${YELLOW}To start the games menu, type:${NC}"
-  echo -e "  ${GREEN}./games.sh${NC} ${YELLOW}or just${NC} ${GREEN}games${NC} ${YELLOW}after restarting Termux${NC}\n"
-  
-  echo -e "${UNDERLINE}Important Links:${NC}"
-  echo -e "• ${BLUE}Termux Guide:${NC} https://linkr.bio/BangRoy.go.id"
-  echo -e "• ${BLUE}AI Assistant:${NC} https://ai-google.vercel.app/"
-  echo -e "• ${BLUE}GitHub:${NC} https://github.com/DwiDevelopes\n"
-  
-  echo -e "${RED}${BOLD}Note: This project is protected under copyright.${NC}"
-  echo -e "${YELLOW}Please don't copy without permission.${NC}\n"
-  
-  read -p "Press ENTER to exit..."
+# Completion message
+show_completion() {
+    clear
+    display_banner
+    echo -e "${GREEN}${BOLD}Installation Complete!${NC}\n"
+    
+    figlet "SUCCESS!" | lolcat
+    echo ""
+    
+    echo -e "${CYAN}All games have been installed successfully.${NC}"
+    echo -e "${YELLOW}To start the games menu, type:${NC}"
+    echo -e "  ${GREEN}games${NC}\n"
+    
+    echo -e "${UNDERLINE}Important Links:${NC}"
+    echo -e "• ${BLUE}Official Website:${NC} https://linkr.bio/BangRoy.go.id"
+    echo -e "• ${BLUE}GitHub Repository:${NC} https://github.com/DwiDevelopes"
+    echo -e "• ${BLUE}AI Assistant:${NC} https://ai-google.vercel.app/\n"
+    
+    echo -e "${RED}${BOLD}Copyright Notice:${NC}"
+    echo -e "${YELLOW}This project is protected under copyright law.${NC}"
+    echo -e "${YELLOW}Unauthorized copying or distribution is prohibited.${NC}\n"
+    
+    read -p "Press ENTER to exit..."
 }
 
 # Main execution
 display_banner
-echo -e "${YELLOW}This script will install various games in Termux.${NC}"
+
+# Check if user wants to install
+echo -e "${YELLOW}This will install ALL Termux games (50+ games, ~500MB).${NC}"
+echo -e "${YELLOW}It may take 10-20 minutes depending on your connection.${NC}\n"
 read -p "Do you want to continue? [Y/n] " -n 1 -r
 echo ""
 
 if [[ $REPLY =~ ^[Yy]$ ]] || [[ -z $REPLY ]]; then
-  install_games
-  display_completion
+    install_dependencies
+    install_all_games
+    show_completion
 else
-  echo -e "${RED}Installation cancelled.${NC}"
-  exit 1
+    echo -e "${RED}Installation cancelled.${NC}"
+    exit 1
 fi
