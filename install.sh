@@ -1,153 +1,159 @@
-#game termux playfrom saya
-# Termux-Games
-# Coded by: dwi bakti n dev
+#!/bin/bash
 
+# Configuration
+RED='\033[1;31m'
+GREEN='\033[1;32m'
+YELLOW='\033[1;33m'
+BLUE='\033[1;34m'
+PURPLE='\033[1;35m'
+CYAN='\033[1;36m'
+NC='\033[0m'
+BOLD='\033[1m'
+UNDERLINE='\033[4m'
 
+# ASCII Art Banner
+display_banner() {
+  clear
+  echo -e "${PURPLE}"
+  cat << "EOF"
+  ████████╗███████╗██████╗ ███╗   ███╗██╗   ██╗██╗  ██╗
+  ╚══██╔══╝██╔════╝██╔══██╗████╗ ████║╚██╗ ██╔╝╚██╗██╔╝
+     ██║   █████╗  ██████╔╝██╔████╔██║ ╚████╔╝  ╚███╔╝ 
+     ██║   ██╔══╝  ██╔══██╗██║╚██╔╝██║  ╚██╔╝   ██╔██╗ 
+     ██║   ███████╗██║  ██║██║ ╚═╝ ██║   ██║   ██╔╝ ██╗
+     ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝   ╚═╝   ╚═╝  ╚═╝
+EOF
+  echo -e "${NC}"
+  echo -e "${CYAN}                   TERMUX GAME COLLECTION - BY DWI BAKTI N DEV${NC}"
+  echo -e "${YELLOW}══════════════════════════════════════════════════════════════════════${NC}"
+  echo -e "${RED}${BOLD}NOTE: Please don't copy this project without permission${NC}\n"
+}
 
-echo -e "\e[032m" "saya mohon jangan copy project saya ini kalau kalian mau copy bayar 25rb hehe"
+# Centered text with color
+center() {
+  termwidth=$(stty size | cut -d" " -f2)
+  padding="$(printf '%0.1s' ' '{1..500})"
+  printf "%*.*s ${BLUE}%s${NC} %*.*s\n" 0 "$(((termwidth-2-${#1})/2))" "$padding" "$1" 0 "$(((termwidth-1-${#1})/2))" "$padding"
+}
 
+# Installation header
+install_header() {
+  clear
+  display_banner
+  echo -e "${GREEN}${UNDERLINE}Installing Termux Games...${NC}\n"
+}
 
-clear
+# Install package with status
+install_pkg() {
+  local pkg=$1
+  local name=$2
+  
+  echo -e "${YELLOW}Installing ${CYAN}${name}${YELLOW}...${NC}"
+  if pkg install "$pkg" -y >/dev/null 2>&1; then
+    echo -e "${GREEN}✓ ${name} installed successfully${NC}"
+  else
+    echo -e "${RED}✗ Failed to install ${name}${NC}"
+  fi
+  echo ""
+}
 
+# Main installation function
+install_games() {
+  install_header
+  
+  # Install dependencies first
+  echo -e "${PURPLE}Installing dependencies...${NC}"
+  install_pkg ruby "Ruby (for Lolcat)"
+  gem install lolcat >/dev/null 2>&1
+  install_pkg figlet "Figlet"
+  echo ""
+  
+  # Classic Games
+  echo -e "${PURPLE}Installing Classic Games...${NC}"
+  install_pkg bastet "Bastet (Tetris)"
+  install_pkg pacman4console "Pacman"
+  install_pkg moon-buggy "Moon-Buggy"
+  install_pkg ninvaders "Space Invaders"
+  install_pkg nsnake "Snake Game"
+  
+  # Strategy Games
+  echo -e "\n${PURPLE}Installing Strategy Games...${NC}"
+  install_pkg greed "Greed"
+  install_pkg nethack "Nethack"
+  install_pkg curseofwar "Curse of War"
+  install_pkg dopewars "Dope Wars"
+  
+  # Puzzle Games
+  echo -e "\n${PURPLE}Installing Puzzle Games...${NC}"
+  install_pkg nudoku "Sudoku"
+  install_pkg 2048 "2048"
+  install_pkg brogue "Brogue"
+  install_pkg phear "Phear"
+  
+  # Additional Games
+  echo -e "\n${PURPLE}Installing Additional Games...${NC}"
+  install_pkg overkill "Overkill"
+  install_pkg csol "CSOL"
+  install_pkg gnugo "Gnu Go"
+  install_pkg gnuski "Gnu Ski"
+  install_pkg moria "Moria"
+  install_pkg npush "Npush"
+  install_pkg robotfindskitten "Robot Finds Kitten"
+  install_pkg ttysolitaire "TTY Solitaire"
+  install_pkg myman "Myman"
+  install_pkg go "Go Game"
+  
+  # Special Installations
+  echo -e "\n${PURPLE}Special Installations...${NC}"
+  echo -e "${YELLOW}Installing Hangman...${NC}"
+  pkg install git -y && git clone https://github.com/DwiDevelopes/HangmanPy.git
+  echo -e "${GREEN}✓ Hangman installed successfully${NC}\n"
+  
+  echo -e "${YELLOW}Installing Python...${NC}"
+  pkg install python -y
+  echo -e "${GREEN}✓ Python installed successfully${NC}\n"
+  
+  echo -e "${YELLOW}Building 2048 from source...${NC}"
+  pkg install wget clang -y && wget https://raw.githubusercontent.com/mevdschee/2048.c/master/2048.c && gcc -o 2048 2048.c
+  echo -e "${GREEN}✓ 2048 built successfully${NC}\n"
+  
+  # Create alias
+  echo -e "${YELLOW}Creating games alias...${NC}"
+  echo "alias games='cd && cd Termux-Games && bash games.sh'" >> /data/data/com.termux/files/usr/etc/bash.bashrc
+  echo -e "${GREEN}✓ Alias created. You can now type 'games' to start.${NC}\n"
+}
 
-echo "play Games in Termux by-dwi bakti n dev"
+# Final message
+display_completion() {
+  clear
+  display_banner
+  echo -e "${GREEN}${BOLD}Installation Complete!${NC}\n"
+  
+  echo -e "${CYAN}Games successfully installed in your Termux.${NC}"
+  echo -e "${YELLOW}To start the games menu, type:${NC}"
+  echo -e "  ${GREEN}./games.sh${NC} ${YELLOW}or just${NC} ${GREEN}games${NC} ${YELLOW}after restarting Termux${NC}\n"
+  
+  echo -e "${UNDERLINE}Important Links:${NC}"
+  echo -e "• ${BLUE}Termux Guide:${NC} https://linkr.bio/BangRoy.go.id"
+  echo -e "• ${BLUE}AI Assistant:${NC} https://ai-google.vercel.app/"
+  echo -e "• ${BLUE}GitHub:${NC} https://github.com/DwiDevelopes\n"
+  
+  echo -e "${RED}${BOLD}Note: This project is protected under copyright.${NC}"
+  echo -e "${YELLOW}Please don't copy without permission.${NC}\n"
+  
+  read -p "Press ENTER to exit..."
+}
 
-echo -e "\e[032m"
-pkg install ruby -y && gem install lolcat
-pkg install figlet
-
-figlet bastet | lolcat && echo Installing..................... | lolcat
-echo -e "\e[032m"
-pkg install bastet
-
-figlet Pacman | lolcat && echo Installing..................... | lolcat
-echo -e "\e[032m"
-pkg install pacman4console
-
-figlet M-buggy | lolcat && echo Installing..................... | lolcat
-echo -e "\e[032m"
-pkg install moon-buggy
-
-figlet invaders | lolcat && echo Installing..................... | lolcat
-echo -e "\e[032m"
-pkg install ninvaders
-
-figlet snake | lolcat && echo Installing..................... | lolcat
-echo -e "\e[032m"
-pkg install nsnake
-
-figlet Greed | lolcat && echo Installing..................... | lolcat
-echo -e "\e[032m"
-pkg install greed
-
-figlet Nethack | lolcat && echo Installing..................... | lolcat
-echo -e "\e[032m"
-pkg install nethack
-
-figlet Sudoku | lolcat && echo Installing..................... | lolcat
-echo -e "\e[032m"
-pkg install nudoku && apt install nudoku
-
-figlet overkill | lolcat && echo Installing..................... | lolcat
-echo -e "\e[032m"
-pkg install overkill && apt install overkill
-
-figlet 2048 | lolcat && echo Installing..................... | lolcat
-echo -e "\e[032m"
-pkg install 2048 && apt install 2048
-
-figlet brogue | lolcat && echo Installing..................... | lolcat
-echo -e "\e[032m"
-pkg install brogue && apt install brogue
-
-figlet phear | lolcat && echo Installing..................... | lolcat
-echo -e "\e[032m"
-pkg install phear && apt install phear
-
-figlet curseofwar | lolcat && echo Installing..................... | lolcat
-echo -e "\e[032m"
-pkg install curseofwar && apt install curseofwar
-
-figlet csol | lolcat && echo Installing..................... | lolcat
-echo -e "\e[032m"
-pkg install csol && apt install csol
-
-figlet dopewars | lolcat && echo Installing..................... | lolcat
-echo -e "\e[032m"
-pkg install dopewars && apt install dopewars
-
-figlet gnugo | lolcat && echo Installing..................... | lolcat
-echo -e "\e[032m"
-pkg install gnugo && apt install gnugo
-
-figlet gnuski | lolcat && echo Installing..................... | lolcat
-echo -e "\e[032m"
-pkg install gnuski && apt install gnuski
-
-figlet moria | lolcat && echo Installing..................... | lolcat
-echo -e "\e[032m"
-pkg install moria && apt install moria
-
-figlet npush | lolcat && echo Installing..................... | lolcat
-echo -e "\e[032m"
-pkg install npush && apt install npush
-
-figlet robotfindskitten | lolcat && echo Installing..................... | lolcat
-echo -e "\e[032m"
-pkg install robotfindskitten && apt install robotfindskitten
-
-figlet ttysolitaire | lolcat && echo Installing..................... | lolcat
-echo -e "\e[032m"
-pkg install ttysolitaire && apt install ttysolitaire
-
-figlet myman | lolcat && echo Installing..................... | lolcat
-echo -e "\e[032m"
-pkg install myman && apt install myman
-
-figlet go | lolcat && echo Installing..................... | lolcat
-echo -e "\e[032m"
-pkg install go && apt install go
-
-figlet curse of war | lolcat && echo Installing..................... | lolcat
-echo -e "\e[032m"
-pkg install curse of war && apt install curse of war
-
-figlet Nsnake | lolcat && echo Installing..................... | lolcat
-echo -e "\e[032m"
-pkg install Nsnake && apt install Nsnake
-
-figlet NINVADERS | lolcat && echo Installing..................... | lolcat
-echo -e "\e[032m"
-pkg install NINVADERS && apt install NINVADERS
-
-figlet curse of war | lolcat && echo Installing..................... | lolcat
-echo -e "\e[032m"
-pkg install NetHack && apt install NetHack
-
-figlet Stickman | lolcat && echo Installing..................... | lolcat
-echo -e "\e[032m"
-pkg install Stickman && apt install Stickman
-
-figlet Sudoku | lolcat && echo Installing..................... | lolcat
-echo -e "\e[032m"
-pkg install Sudoku && apt install Sudoku
-
-figlet Hangman | lolcat && echo Installing..................... | lolcat
-echo -e "\e[032m"
-pkg install git -y && echo -e "\e[032m" && git clone https://github.com/DwiDevelopes/HangmanPy.git
-
-figlet Python | lolcat && echo Installing..................... | lolcat
-echo -e "\e[032m"
-pkg install python -y
-
-figlet "2048" | lolcat && echo Installing..................... | lolcat
-echo -e "\e[032m"
-pkg install git -y && pkg install wget -y && pkg install clang -y && wget https://raw.githubusercontent.com/mevdschee/2048.c/master/2048.c && sleep 2 && gcc -o 2048 2048.c
-
-cd && echo "alias games='cd && cd Termux-Games && bash games.sh'" >> /data/data/com.termux/files/usr/etc/bash.bashrc
-
-echo "Visit https://linkr.bio/BangRoy.go.id keterangan termux lengkap akan selalu kami update di website resmi yang saya buat ini" | lolcat -a
-echo "Visit https://ai-google.vercel.app/ AI Assisten Dwi Bakti N Dev Kalian bisa mencoba vitur tersebut" | lolcat -a
+# Main execution
+display_banner
+echo -e "${YELLOW}This script will install various games in Termux.${NC}"
+read -p "Do you want to continue? [Y/n] " -n 1 -r
 echo ""
-echo -e '\033[1mType ./game.sh to start the Termux-Games\033[0m' | lolcat -a
-echo -e '\033[1mAfter Restaring game dan kalian pilih menu game termux tersebut \033[0m' | lolcat -a
+
+if [[ $REPLY =~ ^[Yy]$ ]] || [[ -z $REPLY ]]; then
+  install_games
+  display_completion
+else
+  echo -e "${RED}Installation cancelled.${NC}"
+  exit 1
+fi
