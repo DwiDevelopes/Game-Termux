@@ -164,7 +164,7 @@ pkg install && pkg update && pkg install git && pkg install python && pkg instal
 
 <br>
 
-## Information Update Games 3.0❤️‍🔥:
+## Information Update Games 2.2❤️‍🔥:
 
 <b>di update patch kali ini sudah di perbarui ke versi terbaru kalian tinggal update saja dan sekarang sudah menambah games di patch 2.0 untuk kalian mainkan puluhan game hingga ratusan games akan terus update games terbaru termux ayo mainkan sekarang.</b>
 
