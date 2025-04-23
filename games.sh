@@ -89,12 +89,12 @@ display_banner() {
   clear
   echo -e "${THEME}"
   cat << "EOF"
-  ██████╗  █████╗ ███╗   ███╗███████╗    ████████╗███████╗██████╗ ███╗   ███╗██╗   ██╗██╗  ██╗
-  ██╔══██╗██╔══██╗████╗ ████║██╔════╝    ╚══██╔══╝██╔════╝██╔══██╗████╗ ████║╚██╗ ██╔╝╚██╗██╔╝
-  ██████╔╝███████║██╔████╔██║█████╗         ██║   █████╗  ██████╔╝██╔████╔██║ ╚████╔╝  ╚███╔╝ 
-  ██╔═══╝ ██╔══██║██║╚██╔╝██║██╔══╝         ██║   ██╔══╝  ██╔══██╗██║╚██╔╝██║  ╚██╔╝   ██╔██╗ 
-  ██║     ██║  ██║██║ ╚═╝ ██║███████╗       ██║   ███████╗██║  ██║██║ ╚═╝ ██║   ██║   ██╔╝ ██╗
-  ╚═╝     ╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝       ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝   ╚═╝   ╚═╝  ╚═╝
+  ████████╗███████╗██████╗ ███╗   ███╗██╗   ██╗██╗  ██╗
+  ╚══██╔══╝██╔════╝██╔══██╗████╗ ████║╚██╗ ██╔╝╚██╗██╔╝
+     ██║   █████╗  ██████╔╝██╔████╔██║ ╚████╔╝  ╚███╔╝ 
+     ██║   ██╔══╝  ██╔══██╗██║╚██╔╝██║  ╚██╔╝   ██╔██╗ 
+     ██║   ███████╗██║  ██║██║ ╚═╝ ██║   ██║   ██╔╝ ██╗
+     ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝   ╚═╝   ╚═╝  ╚═╝
 EOF
   echo -e "${NC}"
   echo -e "${ACCENT}                           TERMUX GAME COLLECTION v3.0 - BY DWI BAKTI NUGROHO${NC}"
@@ -138,7 +138,7 @@ declare -A GAMES=(
   # Classic Games
   ["1.1"]="Moon-buggy:A simple game where you drive a moon buggy and avoid obstacles"
   ["1.2"]="Nsnake:Classic snake game in terminal"
-  ["1.3"]="Pacman:Terminal version of the classic Pacman game"
+  ["1.3"]="Pacman4console:Terminal version of the classic Pacman game"
   ["1.4"]="Ninvaders:Space invaders clone for terminal"
   
   # Strategy Games
@@ -302,6 +302,12 @@ launch_game() {
         fi
       fi
       ;;
+    "Zork"|"Dungeon")
+      echo -e "${YELLOW}This is a text adventure game. Install with 'pkg install frotz' first.${NC}"
+      echo -e "After installation, you can play with 'frotz ${game,,}.dat'"
+      sleep 2
+      return
+      ;;
     *)
       echo -e "${YELLOW}Controls:${NC}"
       echo -e "• Press ${GREEN}Q${NC} to quit most games"
@@ -316,7 +322,21 @@ launch_game() {
           return
         fi
       else
-        $game
+        # Handle games with different executable names
+        case $game in
+          "Pacman4console") pacman4console ;;
+          "Moon-buggy") moon-buggy ;;
+          "Nsnake") nsnake ;;
+          "Ninvaders") ninvaders ;;
+          "Bastet") bastet ;;
+          "Nudoku") nudoku ;;
+          "Greed") greed ;;
+          "Angband") angband ;;
+          "Nethack") nethack ;;
+          "Dopewars") dopewars ;;
+          "Myman") myman ;;
+          *) $game ;;
+        esac
       fi
       ;;
   esac
