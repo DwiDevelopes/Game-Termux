@@ -74,6 +74,11 @@ EOF
 install_dependencies() {
     echo -e "${PURPLE}${BOLD}Installing Dependencies...${NC}"
     
+    # Update packages first
+    echo -e "${YELLOW}Updating packages...${NC}"
+    pkg update -y > /dev/null 2>&1 &
+    spinner
+    
     if ! install_pkg ruby; then
         echo -e "${RED}Critical error: Ruby installation failed${NC}"
         exit 1
@@ -93,12 +98,18 @@ install_dependencies() {
     install_pkg clang
     install_pkg git
     install_pkg python
+    install_pkg jq  # Needed for JSON parsing in game images feature
+    install_pkg termux-api  # For some advanced features
     
     echo ""
 }
 
 # Install all games
 install_all_games() {
+    # Create game directory
+    mkdir -p ~/Termux-Games
+    cd ~/Termux-Games
+    
     # Classic Games
     echo -e "${PURPLE}${BOLD}Installing Classic Games...${NC}"
     install_pkg moon-buggy
@@ -119,7 +130,6 @@ install_all_games() {
     
     # Puzzle Games
     echo -e "\n${PURPLE}${BOLD}Installing Puzzle Games...${NC}"
-    install_pkg 2048
     install_pkg brogue
     install_pkg phear
     install_pkg gnuski
@@ -127,7 +137,7 @@ install_all_games() {
     
     # Arcade Games
     echo -e "\n${PURPLE}${BOLD}Installing Arcade Games...${NC}"
-    install_pkg overkill
+    install_pkg 0verkill
     install_pkg csol
     install_pkg robotfindskitten
     install_pkg ttysolitaire
@@ -138,8 +148,6 @@ install_all_games() {
     install_pkg go
     install_pkg sl
     install_pkg cmatrix
-    install_pkg ninvaders
-    install_pkg moon-buggy
     
     # Special Installations
     echo -e "\n${PURPLE}${BOLD}Special Installations...${NC}"
@@ -174,14 +182,50 @@ install_all_games() {
         fi
     fi
     
+    # Download the main game collection script
+    echo -e "\n${YELLOW}Downloading Game Collection Manager...${NC}"
+    if [ -f "games.sh" ]; then
+        echo -e "${GREEN}✓ Game manager already exists${NC}"
+    else
+        wget https://raw.githubusercontent.com/DwiDevelopes/Termux-Games/main/games.sh > /dev/null 2>&1 &
+        spinner
+        if [ -f "games.sh" ]; then
+            chmod +x games.sh
+            echo -e "${GREEN}✓ Game manager downloaded successfully${NC}"
+        else
+            echo -e "${RED}✗ Failed to download game manager${NC}"
+            echo -e "${YELLOW}Trying alternative download...${NC}"
+            curl -o games.sh https://raw.githubusercontent.com/DwiDevelopes/Termux-Games/main/games.sh > /dev/null 2>&1 &
+            spinner
+            if [ -f "games.sh" ]; then
+                chmod +x games.sh
+                echo -e "${GREEN}✓ Game manager downloaded successfully${NC}"
+            else
+                echo -e "${RED}✗ Critical error: Failed to download game manager${NC}"
+                exit 1
+            fi
+        fi
+    fi
+    
     # Create alias
     echo -e "\n${YELLOW}Creating games alias...${NC}"
-    if grep -q "alias games=" /data/data/com.termux/files/usr/etc/bash.bashrc; then
+    if grep -q "alias games=" $HOME/.bashrc; then
         echo -e "${GREEN}✓ Alias already exists${NC}"
     else
-        echo "alias games='cd && cd Termux-Games && bash games.sh'" >> /data/data/com.termux/files/usr/etc/bash.bashrc
+        echo "alias games='cd ~/Termux-Games && bash games.sh'" >> $HOME/.bashrc
         echo -e "${GREEN}✓ Alias created successfully${NC}"
+        echo -e "${YELLOW}Note: You may need to run 'source ~/.bashrc' or restart Termux${NC}"
     fi
+    
+    # Create game installation directory
+    mkdir -p ~/Termux-Games/games_install
+    
+    # Set up termux properties for better keyboard
+    echo -e "\n${YELLOW}Configuring Termux keyboard...${NC}"
+    mkdir -p ~/.termux
+    echo "extra-keys = [['ESC','/','-','HOME','UP','END'],['TAB','CTRL','ALT','LEFT','DOWN','RIGHT']]" > ~/.termux/termux.properties
+    termux-reload-settings
+    echo -e "${GREEN}✓ Keyboard configured${NC}"
 }
 
 # Completion message
@@ -197,6 +241,13 @@ show_completion() {
     echo -e "${YELLOW}To start the games menu, type:${NC}"
     echo -e "  ${GREEN}games${NC}\n"
     
+    echo -e "${YELLOW}Game Collection Features:${NC}"
+    echo -e "• ${GREEN}100+ Terminal Games${NC}"
+    echo -e "• ${GREEN}Game Installation System${NC}"
+    echo -e "• ${GREEN}Customizable Themes${NC}"
+    echo -e "• ${GREEN}Game Images from Unsplash${NC}"
+    echo -e "• ${GREEN}Favorites & History Tracking${NC}\n"
+    
     echo -e "${UNDERLINE}Important Links:${NC}"
     echo -e "• ${BLUE}Official Website:${NC} https://linkr.bio/BangRoy.go.id"
     echo -e "• ${BLUE}GitHub Repository:${NC} https://github.com/DwiDevelopes"
@@ -206,6 +257,9 @@ show_completion() {
     echo -e "${YELLOW}This project is protected under copyright law.${NC}"
     echo -e "${YELLOW}Unauthorized copying or distribution is prohibited.${NC}\n"
     
+    echo -e "${YELLOW}Note: Some games may require additional setup.${NC}"
+    echo -e "${YELLOW}Refer to the game's documentation for specific instructions.${NC}\n"
+    
     read -p "Press ENTER to exit..."
 }
 
@@ -213,7 +267,7 @@ show_completion() {
 display_banner
 
 # Check if user wants to install
-echo -e "${YELLOW}This will install ALL Termux games (50+ games, ~500MB).${NC}"
+echo -e "${YELLOW}This will install Termux Game Collection with 50+ games (~500MB).${NC}"
 echo -e "${YELLOW}It may take 10-20 minutes depending on your connection.${NC}\n"
 read -p "Do you want to continue? [Y/n] " -n 1 -r
 echo ""
