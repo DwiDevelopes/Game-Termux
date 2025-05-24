@@ -1,332 +1,370 @@
-#!/bin/bash
+clear
 
-# Termux Games Menu - Professional Edition
-# Original by: dwi bakti n dev
-# Enhanced with professional UI, history tracking, clock, and favorites
+n=1
+while  (($n < 3))
+do
+clear
 
-# Initialize variables
-GAMES_DIR="$HOME/termux-games"
-HISTORY_FILE="$GAMES_DIR/game_history.log"
-FAVORITES_FILE="$GAMES_DIR/favorites.list"
-mkdir -p "$GAMES_DIR"
-touch "$HISTORY_FILE"
-touch "$FAVORITES_FILE"
+echo "😭😖😲🫠🙃😜😫     PLAY NOW      😲🫠🙃😜😫😯😣" | lolcat -s 100000 
+echo "______________________________________________________" | lolcat -s 100000 
+echo "                 Game Termux V2.2.1                   " | lolcat -s 100000 
+echo "                                                      " | lolcat -s 100000 
+echo " ______   ____   ____    __    ___          |   /     " | lolcat -s 100000 
+echo "   |      |      |   |   |   \/  |   |    | | /       " | lolcat -s 100000 
+echo "   |      |___   __  |   |       |   |    | |         " | lolcat -s 100000 
+echo "   |      |      |   \   |       |   |    | | \       " | lolcat -s 100000 
+echo "   |      |___   |    \  |       |   | ___| |  \      " | lolcat -s 100000 
+echo "                                                      " | lolcat -s 100000 
+echo "  _____      😎    __    ___    ____                  " | lolcat -s 100000 
+echo " |          / \    |   \/  |    |                     " | lolcat -s 100000 
+echo " |  _ _   /  _  \  |       |    |                     " | lolcat -s 100000 
+echo " |    |  /       \ |       |    |___                  " | lolcat -s 100000 
+echo " |____|            |       |    |                     " | lolcat -s 100000 
+echo "                                |___                  " | lolcat -s 100000 
+echo "                                                      " | lolcat -s 100000 
+echo "                                                      " | lolcat -s 100000 
+echo "                                                      " | lolcat -s 100000 
+echo "______________________________________________________" | lolcat -s 100000 
+echo "🩻🩻🩻🩻🩻     Dwi Bakti Nugroho  🩻🩻🩻🩻🩻🩻🩻" | lolcat -s 100000 
+echo "----------------------Royhtml-------------------------" | lolcat
+echo "-----{ Website: https://linkr.bio/BangRoy.go.id }-----" | lolcat -as 50
+echo "---Game Tersebut Dilindungi Oleh dwi bakti n dev------" | lolcat -as 50
+echo "------Game dilindungi hak cipta dwi bakti n dev-------" | lolcat -as 50
+echo "---------------------💕💕----------------------------" | lolcat 
 
-# Colors
-RED='\033[1;31m'
-GREEN='\033[1;32m'
-YELLOW='\033[1;33m'
-BLUE='\033[1;34m'
-PURPLE='\033[1;35m'
-CYAN='\033[1;36m'
-WHITE='\033[1;37m'
-NC='\033[0m'
 
-# Function to log game play
-log_game() {
-    local game_name="$1"
-    local timestamp=$(date +"%Y-%m-%d %H:%M:%S")
-    echo "[$timestamp] Played: $game_name" >> "$HISTORY_FILE"
-}
+echo "[game dwi bakti 1]  Moon-buggy " | lolcat -as 1000 
+echo "[game dwi bakti 2]  Tetris " | lolcat -as 1000
+echo "[game dwi bakti 3]  Pacman " | lolcat -as 1000
+echo "[game dwi bakti 4]  Space- Invaders " | lolcat -as 1000
+echo "[game dwi bakti 5]  Snake-Game " | lolcat -as 1000
+echo "[game dwi bakti 6]  Greed " | lolcat -as 1000
+echo "[game dwi bakti 7]  Nethack " | lolcat -as 1000
+echo "[game dwi bakti 8]  Hangman " | lolcat -as 1000
+echo "[game dwi bakti 9]  2048 " | lolcat -as 1000
+echo "[game dwi bakti 10] nudoku " | lolcat -as 1000
+echo "[game dwi bakti 11] Overkill " | lolcat -as 1000
+echo "[game dwi bakti 12] 2048 ke 2 " | lolcat -as 1000
+echo "[game dwi bakti 13] brogue " | lolcat -as 1000
+echo "[game dwi bakti 14] phear " | lolcat -as 1000
+echo "[game dwi bakti 15] curseofwar " | lolcat -as 1000
+echo "[game dwi bakti 16] csol " | lolcat -as 1000
+echo "[game dwi bakti 17] dopewars " | lolcat -as 1000
+echo "[game dwi bakti 18] gnugo " | lolcat -as 1000
+echo "[game dwi bakti 19] gnuski " | lolcat -as 1000
+echo "[game dwi bakti 20] moria " | lolcat -as 1000
+echo "[game dwi bakti 21] npush " | lolcat -as 1000
+echo "[game dwi bakti 22] robotfindskitten " | lolcat -as 1000
+echo "[game dwi bakti 23] ttysolitaire " | lolcat -as 1000
+echo "[game dwi bakti 24] myman " | lolcat -as 1000
+echo "[game dwi bakti 25] go " | lolcat -as 1000
+echo "[game dwi bakti 26] ski " | lolcat -as 1000
+echo "[game dwi bakti 27] curse of war " | lolcat -as 1000
+echo "[game dwi bakti 28] Nsnake " | lolcat -as 1000
+echo "[game dwi bakti 29] NINVADERS " | lolcat -as 1000
+echo "[game dwi bakti 30] NetHack " | lolcat -as 1000
+echo "[game dwi bakti 31] Stickman " | lolcat -as 1000
+echo "[game dwi bakti 32] Sudoku " | lolcat -as 1000
+echo "[Pengalaman dwi bakti]  Ayo Lihat " | lolcat -as 1000
+echo "[cek si pembuat]  Cek Keterangan Saya " | lolcat -as 1000
+echo "[dampak positif]  Dampak Positif Bermain Games " | lolcat -as 1000
+echo "[dampak negatif]  Dampak Negatif Bermain Games " | lolcat -as 1000
+echo "[cerita hangker]  Termux Comunity Source " | lolcat -as 1000
+echo "[hak cipta]  Di Lindungi Hak Cipta " | lolcat -as 1000
+echo "[kembali]  KELUAR "  | lolcat -as 1000
 
-# Function to add to favorites
-add_to_favorites() {
-    local game_name="$1"
-    if ! grep -q "^$game_name$" "$FAVORITES_FILE"; then
-        echo "$game_name" >> "$FAVORITES_FILE"
-        echo -e "${GREEN}Added to favorites!${NC}"
-    else
-        echo -e "${YELLOW}Already in favorites!${NC}"
-    fi
-}
 
-# Function to remove from favorites
-remove_from_favorites() {
-    local game_name="$1"
-    if grep -q "^$game_name$" "$FAVORITES_FILE"; then
-        sed -i "/^$game_name$/d" "$FAVORITES_FILE"
-        echo -e "${RED}Removed from favorites!${NC}"
-    else
-        echo -e "${YELLOW}Not in favorites!${NC}"
-    fi
-}
 
-# Function to check if game is favorite
-is_favorite() {
-    local game_name="$1"
-    grep -q "^$game_name$" "$FAVORITES_FILE"
-    return $?
-}
 
-# Function to display centered text with color
-center_text() {
-    local text="$1"
-    local color="$2"
-    local cols=$(tput cols)
-    printf "${color}%*s${NC}\n" $(( (${#text} + cols) / 2 )) "$text"
-}
 
-# Function to display header with clock
-display_header() {
-    clear
-    # Top border
-    echo -e "${BLUE}╔════════════════════════════════════════════════════════════════════════════╗${NC}"
-    
-    # Title with clock
-    local title="TERMUX GAMES MENU v2.2.1"
-    local clock=$(date +"%H:%M:%S")
-    local header_line=$(printf "║ %-50s %15s ║" "$title" "$clock")
-    echo -e "${BLUE}${header_line}${NC}"
-    
-    # Subtitle
-    center_text "PROFESSIONAL EDITION" "${PURPLE}"
-    echo -e "${BLUE}╠════════════════════════════════════════════════════════════════════════════╣${NC}"
-    
-    # Author info
-    center_text "Developed by: Dwi Bakti Nugroho" "${CYAN}"
-    center_text "Website: https://linkr.bio/BangRoy.go.id" "${YELLOW}"
-    echo -e "${BLUE}╚════════════════════════════════════════════════════════════════════════════╝${NC}"
-    echo
-}
+# Select a Choice :
 
-# Function to display game history
-show_history() {
-    clear
-    echo -e "${PURPLE}╔════════════════════════════════════════════════════════════╗${NC}"
-    echo -e "${PURPLE}║                     GAME PLAY HISTORY                      ║${NC}"
-    echo -e "${PURPLE}╠════════════════════════════════════════════════════════════╣${NC}"
-    
-    if [ -s "$HISTORY_FILE" ]; then
-        # Show last 10 entries
-        tail -n 10 "$HISTORY_FILE" | while read -r line; do
-            echo -e "${BLUE}║ ${CYAN}$line${BLUE} ║${NC}"
-        done
-    else
-        echo -e "${BLUE}║ ${YELLOW}No game history yet. Play some games!${BLUE}               ║${NC}"
-    fi
-    
-    echo -e "${PURPLE}╚════════════════════════════════════════════════════════════╝${NC}"
-    read -p "Press [ENTER] to continue: "
-}
+echo -e "Enter a Choice : \c" | lolcat
+read option
 
-# Function to display favorites
-show_favorites() {
-    clear
-    echo -e "${PURPLE}╔════════════════════════════════════════════════════════════╗${NC}"
-    echo -e "${PURPLE}║                      FAVORITE GAMES                       ║${NC}"
-    echo -e "${PURPLE}╠════════════════════════════════════════════════════════════╣${NC}"
-    
-    if [ -s "$FAVORITES_FILE" ]; then
-        local count=1
-        while read -r game; do
-            echo -e "${BLUE}║ ${GREEN}[$count] ${YELLOW}$game${BLUE} ║${NC}"
-            ((count++))
-        done < "$FAVORITES_FILE"
-    else
-        echo -e "${BLUE}║ ${YELLOW}No favorites yet. Add some games!${BLUE}                  ║${NC}"
-    fi
-    
-    echo -e "${PURPLE}╚════════════════════════════════════════════════════════════╝${NC}"
-    echo -e "${GREEN}Options:${NC}"
-    echo -e " [1-9] Play favorite game"
-    echo -e " [C] Clear favorites"
-    echo -e " [B] Back to main menu"
-    
-    read -p "Enter your choice: " choice
-    
-    case $choice in
-        [1-9])
-            local line=$(sed "${choice}q;d" "$FAVORITES_FILE" 2>/dev/null)
-            if [ -n "$line" ]; then
-                play_game_by_name "$line"
-            else
-                echo -e "${RED}Invalid selection!${NC}"
-                sleep 1
-            fi
-            ;;
-        c|C)
-            > "$FAVORITES_FILE"
-            echo -e "${GREEN}Favorites cleared!${NC}"
-            sleep 1
-            ;;
-        b|B)
-            return
-            ;;
-        *)
-            echo -e "${RED}Invalid choice!${NC}"
-            sleep 1
-            ;;
-    esac
-}
+case $option in 
+	"game dwi bakti 1") 
+	echo "Press q on your Keyboard to Exit this game " | lolcat -a
+	read -p "Press [ENTER] to Start the Game: " | lolcat -a
+	moon-buggy
+;;
+	"game dwi bakti 2")
+	echo "Press CTRL + c to Exit this game " | lolcat -a
+	read -p "Press [ENTER] to Start the Game: " | lolcat -a
+	bastet
+;;
+	"game dwi bakti 3")
+	echo "Press q on your Keyboard to Exit this game " | lolcat -a
+	read -p "Press [ENTER] to Start the Game: " | lolcat -a
+	pacman
+	sleep 2
+;;
+	"game dwi bakti 4") 
+	echo "Press q on your Keyboard to Exit this game " | lolcat -a
+	read -p "Press [ENTER] to Start the Game: " | lolcat -a
+	ninvaders || nInvaders 
+;;
+	"game dwi bakti 5")
+	echo "Press q on your Keyboard to Exit this game " | lolcat -a
+	read -p "Press [ENTER] to Start the Game: " | lolcat -a
+	nsnake
+	sleep 2
+;;
+	"game dwi bakti 6")
+	echo "Press q on your Keyboard and then y to Exit this game...If this game crash you can Exit the session(its a bug in this game.) " | lolcat -a
+	read -p "Press [ENTER] to Start the Game: " | lolcat -a
+	greed
+;;
+	"game dwi bakti 7")
+	echo "You can press CTRL + c and then give the answer of asked Question to Quit the Games." | lolcat -a
+	read -p "Press [ENTER] to Start the Game: " | lolcat -a
+	nethack
+;;
+	"game dwi bakti 8") cd HangmanPy && python hangman.py
+	echo "You can Play the game and when you win or lose the game you will be asked to Quit the game or Replay." | lolcat -a
+	read -p "Press [ENTER] to Start the Game: " | lolcat -a
+;;
+	"game dwi bakti 9")
+	echo "Press q and then y to exit the game." | lolcat -a
+	read -p "Press [ENTER] to Start the Game: " | lolcat -a
+	./2048
+;;
+	"game dwi bakti 10")
+	echo "Press CTRL + c to Exit this game" | lolcat -a
+	read -p "Press [ENTER] to Start the Game: " | lolcat -a
+	nudoku
+;;
+	"game dwi bakti 11")
+	echo "Press CTRL + c to Exit this game" | lolcat -a
+	read -p "Press [ENTER] to Start the Game: " | lolcat -a
+	0verkill
+	
+;;
+	"game dwi bakti 12")
+	echo "Press CTRL + c to Exit this game" | lolcat -a
+	read -p "Press [ENTER] to Start the Game: " | lolcat -a
+	2048
 
-# Function to play game by name
-play_game_by_name() {
-    local game_name="$1"
-    log_game "$game_name"
-    
-    case "$game_name" in
-        "Moon-buggy")
-            echo -e "${CYAN}Press q to exit the game${NC}"
-            read -p "Press [ENTER] to start Moon-buggy: "
-            moon-buggy
-            ;;
-        "Tetris")
-            echo -e "${CYAN}Press CTRL+c to exit the game${NC}"
-            read -p "Press [ENTER] to start Tetris: "
-            bastet || echo -e "${RED}Tetris game not found! Try installing 'bastet' package.${NC}"
-            ;;
-        "Pacman")
-            echo -e "${CYAN}Press q to exit the game${NC}"
-            read -p "Press [ENTER] to start Pacman: "
-            pacman4console || echo -e "${RED}Pacman game not found! Try installing 'pacman4console' package.${NC}"
-            ;;
-        # Add other games here following the same pattern
-        *)
-            echo -e "${RED}Game launcher not configured for: $game_name${NC}"
-            sleep 2
-            ;;
-    esac
-}
+;;
+	"game dwi bakti 13")
+	echo "Press CTRL + c to Exit this game" | lolcat -a
+	read -p "Press [ENTER] to Start the Game: " | lolcat -a
+	brogue
 
-# Main menu
-while true; do
-    display_header
-    
-    # Current date and time
-    echo -e "${GREEN}$(date +"%A, %B %d %Y")${NC}"
-    echo
-    
-    # Main menu options
-    echo -e "${BLUE}╔════════════════════════════════════════════════════════════╗${NC}"
-    echo -e "${BLUE}║ ${GREEN}MAIN MENU ${BLUE}║${NC}"
-    echo -e "${BLUE}╠════════════════════════════════════════════════════════════╣${NC}"
-    echo -e "${BLUE}║ ${YELLOW}[1] ${CYAN}All Games List                            ${BLUE}║${NC}"
-    echo -e "${BLUE}║ ${YELLOW}[2] ${CYAN}Favorites                                 ${BLUE}║${NC}"
-    echo -e "${BLUE}║ ${YELLOW}[3] ${CYAN}Game History                              ${BLUE}║${NC}"
-    echo -e "${BLUE}║ ${YELLOW}[4] ${CYAN}About Developer                           ${BLUE}║${NC}"
-    echo -e "${BLUE}║ ${YELLOW}[5] ${CYAN}Exit                                      ${BLUE}║${NC}"
-    echo -e "${BLUE}╚════════════════════════════════════════════════════════════╝${NC}"
-    
-    read -p "Enter your choice (1-5): " main_choice
-    
-    case $main_choice in
-        1)  # All Games List
-            while true; do
-                display_header
-                
-                # Game categories
-                echo -e "${PURPLE}╔════════════════════════════════════════════════════════════╗${NC}"
-                echo -e "${PURPLE}║ ${GREEN}GAME CATEGORIES ${PURPLE}║${NC}"
-                echo -e "${PURPLE}╠════════════════════════════════════════════════════════════╣${NC}"
-                echo -e "${PURPLE}║ ${YELLOW}[1] ${CYAN}Classic Games                              ${PURPLE}║${NC}"
-                echo -e "${PURPLE}║ ${YELLOW}[2] ${CYAN}Puzzle Games                               ${PURPLE}║${NC}"
-                echo -e "${PURPLE}║ ${YELLOW}[3] ${CYAN}Strategy Games                             ${PURPLE}║${NC}"
-                echo -e "${PURPLE}║ ${YELLOW}[4] ${CYAN}Back to Main Menu                          ${PURPLE}║${NC}"
-                echo -e "${PURPLE}╚════════════════════════════════════════════════════════════╝${NC}"
-                
-                read -p "Select category (1-4): " category
-                
-                case $category in
-                    1)  # Classic Games
-                        while true; do
-                            display_header
-                            echo -e "${BLUE}╔════════════════════════════════════════════════════════════╗${NC}"
-                            echo -e "${BLUE}║ ${GREEN}CLASSIC GAMES ${BLUE}║${NC}"
-                            echo -e "${BLUE}╠════════════════════════════════════════════════════════════╣${NC}"
-                            echo -e "${BLUE}║ ${YELLOW}[1] ${CYAN}Moon-buggy       ${YELLOW}[6] ${CYAN}Greed          ${BLUE}║${NC}"
-                            echo -e "${BLUE}║ ${YELLOW}[2] ${CYAN}Tetris           ${YELLOW}[7] ${CYAN}Nethack        ${BLUE}║${NC}"
-                            echo -e "${BLUE}║ ${YELLOW}[3] ${CYAN}Pacman           ${YELLOW}[8] ${CYAN}Hangman        ${BLUE}║${NC}"
-                            echo -e "${BLUE}║ ${YELLOW}[4] ${CYAN}Space-Invaders   ${YELLOW}[9] ${CYAN}2048           ${BLUE}║${NC}"
-                            echo -e "${BLUE}║ ${YELLOW}[5] ${CYAN}Snake-Game       ${YELLOW}[0] ${CYAN}Back           ${BLUE}║${NC}"
-                            echo -e "${BLUE}╚════════════════════════════════════════════════════════════╝${NC}"
-                            
-                            read -p "Select game (1-9, 0 to back): " game_choice
-                            
-                            case $game_choice in
-                                1) play_game_by_name "Moon-buggy" ;;
-                                2) play_game_by_name "Tetris" ;;
-                                3) play_game_by_name "Pacman" ;;
-                                4) play_game_by_name "Space-Invaders" ;;
-                                5) play_game_by_name "Snake-Game" ;;
-                                6) play_game_by_name "Greed" ;;
-                                7) play_game_by_name "Nethack" ;;
-                                8) play_game_by_name "Hangman" ;;
-                                9) play_game_by_name "2048" ;;
-                                0) break ;;
-                                *) echo -e "${RED}Invalid choice!${NC}"; sleep 1 ;;
-                            esac
-                            
-                            # After game ends, show options
-                            display_header
-                            echo -e "${GREEN}Game finished!${NC}"
-                            echo -e "Options:"
-                            echo -e " [1] Play again"
-                            echo -e " [2] Add to favorites"
-                            echo -e " [3] Remove from favorites"
-                            echo -e " [4] Back to menu"
-                            
-                            read -p "Choose option: " option
-                            
-                            case $option in
-                                1) continue ;;
-                                2) add_to_favorites "$game_name" ;;
-                                3) remove_from_favorites "$game_name" ;;
-                                4) break ;;
-                                *) echo -e "${RED}Invalid option!${NC}"; sleep 1 ;;
-                            esac
-                        done
-                        ;;
-                    2)  # Puzzle Games
-                        # Similar structure for puzzle games
-                        echo -e "${YELLOW}Puzzle games coming soon!${NC}"
-                        sleep 1
-                        ;;
-                    3)  # Strategy Games
-                        # Similar structure for strategy games
-                        echo -e "${YELLOW}Strategy games coming soon!${NC}"
-                        sleep 1
-                        ;;
-                    4)  # Back to Main Menu
-                        break
-                        ;;
-                    *)
-                        echo -e "${RED}Invalid category!${NC}"
-                        sleep 1
-                        ;;
-                esac
-            done
-            ;;
-        2)  # Favorites
-            show_favorites
-            ;;
-        3)  # Game History
-            show_history
-            ;;
-        4)  # About Developer
-            clear
-            echo -e "${PURPLE}╔════════════════════════════════════════════════════════════╗${NC}"
-            echo -e "${PURPLE}║ ${GREEN}DEVELOPER INFORMATION ${PURPLE}║${NC}"
-            echo -e "${PURPLE}╠════════════════════════════════════════════════════════════╣${NC}"
-            echo -e "${PURPLE}║ ${CYAN}Name: ${YELLOW}Dwi Bakti Nugroho                          ${PURPLE}║${NC}"
-            echo -e "${PURPLE}║ ${CYAN}Website: ${YELLOW}https://linkr.bio/BangRoy.go.id         ${PURPLE}║${NC}"
-            echo -e "${PURPLE}║ ${CYAN}GitHub: ${YELLOW}https://github.com/DwiDevelopes          ${PURPLE}║${NC}"
-            echo -e "${PURPLE}║ ${CYAN}Contact: ${YELLOW}+62 896-5296-9323                       ${PURPLE}║${NC}"
-            echo -e "${PURPLE}║ ${CYAN}Version: ${YELLOW}2.2.1 Professional Edition              ${PURPLE}║${NC}"
-            echo -e "${PURPLE}╚════════════════════════════════════════════════════════════╝${NC}"
-            echo -e "${GREEN}This menu system is protected by copyright.${NC}"
-            read -p "Press [ENTER] to continue: "
-            ;;
-        5)  # Exit
-            mkdir -p $HOME/.termux/
-            echo "extra-keys = [['ESC','/','-','HOME','UP','END'],['TAB','CTRL','ALT','LEFT','DOWN','RIGHT']]" >> $HOME/.termux/termux.properties 
-            termux-reload-settings
-            echo -e "${GREEN}Please restart Termux for keyboard changes to take effect${NC}"
-            echo -e "${YELLOW}Goodbye!${NC}"
-            exit 0
-            ;;
-        *)
-            echo -e "${RED}Invalid choice!${NC}"
-            sleep 1
-            ;;
-    esac
+
+;;
+	"game dwi bakti 14")
+	echo "Press CTRL + c to Exit this game" | lolcat -a
+	read -p "Press [ENTER] to Start the Game: " | lolcat -a
+	phear
+
+
+;;
+	"game dwi bakti 15")
+	echo "Press CTRL + c to Exit this game" | lolcat -a
+	read -p "Press [ENTER] to Start the Game: " | lolcat -a
+	curseofwar
+
+;;
+	"game dwi bakti 16")
+	echo "Press CTRL + c to Exit this game" | lolcat -a
+	read -p "Press [ENTER] to Start the Game: " | lolcat -a
+	csol
+
+;;
+	"game dwi bakti 17")
+	echo "Press CTRL + c to Exit this game" | lolcat -a
+	read -p "Press [ENTER] to Start the Game: " | lolcat -a
+	dopewars
+
+;;
+	"game dwi bakti 18")
+	echo "Press CTRL + c to Exit this game" | lolcat -a
+	read -p "Press [ENTER] to Start the Game: " | lolcat -a
+	gnugo
+
+;;
+	"game dwi bakti 19")
+	echo "Press CTRL + c to Exit this game" | lolcat -a
+	read -p "Press [ENTER] to Start the Game: " | lolcat -a
+	gnuski
+
+
+;;
+	"game dwi bakti 20")
+	echo "Press CTRL + c to Exit this game" | lolcat -a
+	read -p "Press [ENTER] to Start the Game: " | lolcat -a
+	moria
+
+;;
+	"game dwi bakti 21")
+	echo "Press CTRL + c to Exit this game" | lolcat -a
+	read -p "Press [ENTER] to Start the Game: " | lolcat -a
+	npush
+
+;;
+	"game dwi bakti 22")
+	echo "Press CTRL + c to Exit this game" | lolcat -a
+	read -p "Press [ENTER] to Start the Game: " | lolcat -a
+	robotfindskitten
+
+;;
+	"game dwi bakti 23")
+	echo "Press CTRL + c to Exit this game" | lolcat -a
+	read -p "Press [ENTER] to Start the Game: " | lolcat -a
+	ttysolitaire
+
+;;
+	"game dwi bakti 24")
+	echo "Press CTRL + c to Exit this game" | lolcat -a
+	read -p "Press [ENTER] to Start the Game: " | lolcat -a
+	myman
+;;
+	"game dwi bakti 25")
+	echo "Press CTRL + c to Exit this game" | lolcat -a
+	read -p "Press [ENTER] to Start the Game: " | lolcat -a
+	go
+
+;;
+	"game dwi bakti 26")
+	echo "Press CTRL + c to Exit this game" | lolcat -a
+	read -p "Press [ENTER] to Start the Game: " | lolcat -a
+	ski
+
+ ;;
+	"game dwi bakti 27")
+	echo "Press CTRL + c to Exit this game" | lolcat -a
+	read -p "Press [ENTER] to Start the Game: " | lolcat -a
+	curse of war
+  ;;
+	"game dwi bakti 28")
+	echo "Press CTRL + c to Exit this game" | lolcat -a
+	read -p "Press [ENTER] to Start the Game: " | lolcat -a
+	Nsnake
+  ;;
+	"game dwi bakti 29")
+	echo "Press CTRL + c to Exit this game" | lolcat -a
+	read -p "Press [ENTER] to Start the Game: " | lolcat -a
+	NINVADERS
+  ;;
+	"game dwi bakti 30")
+	echo "Press CTRL + c to Exit this game" | lolcat -a
+	read -p "Press [ENTER] to Start the Game: " | lolcat -a
+	NetHack
+  ;;
+	"game dwi bakti 31")
+	echo "Press CTRL + c to Exit this game" | lolcat -a
+	read -p "Press [ENTER] to Start the Game: " | lolcat -a
+        Stickman
+  ;;
+	"game dwi bakti 32")
+	echo "Press CTRL + c to Exit this game" | lolcat -a
+	read -p "Press [ENTER] to Start the Game: " | lolcat -a
+	Sudoku
+
+;;
+	"Pengalaman dwi bakti") 
+	echo "Pengalaman Cerita Fiksi dan rekayasa hampir nyata sedikit banyak perbedaan  " | lolcat -s 10000
+	echo "Masa Kecil: " | lolcat
+	echo "masa kecil saya sangat menyukai game mulai cara melihat cara pembuatanya hingga sampai pemograman nya dan saya sangat senang dalam pemograman tersebut dan ingin membantu semuah orang" | lolcat -as 100
+	echo "Masa Remaja : " | lolcat
+        echo "saya akan berusaha membantu orang lain di saat muda mulai dari database hingga membantu orang lain dengan hack dikala itu saya sangat susah mendapatkan uang" | lolcat -as 100
+	echo "Masa Berfikir : " | lolcat
+        echo "saya mulai berfikir banyak hal tentang mencari uang dengan sangat keji hingga sampai pernah hack data dan menjual ke dark web dikala itu sangat sulit mendapatkan uang" | lolcat -as 100
+	echo "Masa mulai mengerti : " | lolcat
+        echo "masa itu banyak teman saya yang kena tangkap dan di bunuh itu membuat saya sangat sedih dan saya sadar lebih baik kita menjadi baik dari pada menjadi penjahat tanpa sebab" | lolcat -as 100
+	echo "Mengingat masa lalu kelam : " | lolcat
+        echo "dan di masa kelam saya banyak yang tidak menyukai saya dan banyak sekali konflik pada kejadian tersebut yang membuat saya pusing dan ingin bunuh diri yang sangat menyesal atas banyak korban tersebut" | lolcat -as 100
+	echo "Mengingat Cerita : " | lolcat
+        echo "masalah banyak sekali hampir membuat ku merasa muak dan gw pun memulai untuk melampiaskan ketakutan gw ini dengan belajar banyak hal dalam ilmu pengetahuan yang gw dapat selama ini dan membuka lembaran baru" | lolcat -as 100
+	echo " Bersambung update patch berikutnya " | lolcat
+	read -p "Press [ENTER] to continue: "
+;;
+	"cek si pembuat")
+	clear
+	echo "𝐀𝐛𝐨𝐮𝐭 𝐦𝐞: " | lolcat
+	echo "  ___  " | lolcat -as 100
+	echo " |[_]| " | lolcat -as 100
+	echo " |+ :|  Hello " | lolcat -as 100
+	echo " '---' " | lolcat | lolcat -as 100
+	echo " 😏😣😯😫😜🙃🫠😲😖😭 " | lolcat | lolcat -as 100
+	echo " Game Ini Dilindungi Oleh Hak Cipta Tidak Boleh Untuk Di Ambil " | lolcat | lolcat -as 100
+	echo "[-----------------------------------------------------]" | lolcat -as 100
+	echo " [ɴᴀᴍᴇ] = [Dwi Bakti N dev] " | lolcat -as 50
+	echo ""
+	echo " [ᴡᴇʙsɪᴛᴇ] = [https://portofolio-dwi-bakti-n-dev-liard.vercel.app/] " | lolcat -as 50
+	echo ""
+	echo " [ɢɪᴛʜᴜʙ] = [https://github.com/DwiDevelopes] " | lolcat -as 50
+	echo ""
+	echo " [Whatsapp] = [https://wa.me/+6289652969323] " | lolcat -as 50
+	echo ""
+	echo "[Tiktok] = [www.Tiktok.com/@Royhtml] " | lolcat -as 50
+        echo "[----------------Versi 2.2.1-------------------] " | lolcat -as 50
+	echo "[-----------------------------------------------------]" | lolcat -as 100
+	read -p "Press [ENTER] to continue: "
+
+ ;;
+	"cerita hangker") 
+	echo "Termux Comunity Source  " | lolcat -s 10000
+	echo "https://whatsapp.com/channel/0029VajtSTTLikgJKxcDa01v" | lolcat
+	echo "cerita ini masih menunggu update terbaru yang akan siap di buat oleh saya" | lolcat -as 100
+	echo "Ongoing" | lolcat
+	break
+
+ ;;
+	"dampak positif")
+	clear
+	echo "Dampak Positif Dalam Bermain Games" | lolcat -s 10000
+	echo "Bermain game bisa memiliki dampak positif, seperti : " | lolcat -s 9987
+	echo "Meningkatkan kemampuan kognitif : Bermain game dapat meningkatkan kemampuan problem solving dan logika. " | lolcat -as 100
+        echo "Meningkatkan kreativitas: Bermain game dapat melatih pemain untuk menyusun strategi dan berpikir kreatif. " | lolcat -as 100
+        echo "Menurunkan stres : Bermain game dapat membantu mengurangi stres dan pemulihan trauma." | lolcat -as 100
+        echo "Meningkatkan rasa sportifitas : Bermain game dapat mengajarkan pemain untuk saling menghargai lawan, baik menang maupun kalah. " | lolcat -as 100
+	echo "Meningkatkan kapasitas memori : Bermain game dapat meningkatkan kapasitas memori. " | lolcat -as 100
+        echo "Meningkatkan suasana hati : Bermain game sederhana seperti menyusun balok, membangun kota, atau berkebun dapat memperbaiki suasana hati dan membuat pemain lebih relaks.  " | lolcat -as 100
+	echo "Membantu meningkatkan kemampuan baca: Bermain game dapat membantu meningkatkan kemampuan baca.  " | lolcat -as 100
+        echo "Membantu belajar bahasa asing: Bermain game online dapat membantu anak belajar bahasa asing. " | lolcat -as 100
+	echo "Membantu membuat banyak teman: Bermain game online dapat membantu anak membuat banyak teman.  " | lolcat -as 100
+        echo "Isilah Waktu Kalian Dengan Bermain Games Untuk Menghilangkan Stress Dan Banyak Masalah Dalam Hidup Kalian Intinya Mimin Kaish Tau Kalu Banyak Masalah Carilah Kehidupan Yang Mebuat Kita Merasa Nayaman 🤗🤗  " | lolcat -as 100
+	read -p "Press [ENTER] to continue: "
+
+ ;;
+	"dampak negatif")
+	clear
+	echo "Dampak Negative Dalam Bermain Games" | lolcat -s 10000
+	echo "Bermain game secara berlebihan dapat menimbulkan dampak negatif, seperti : " | lolcat -s 9987
+	echo "Kecanduan : Game online dirancang untuk menarik perhatian dan mempertahankan pemain, sehingga dapat menyebabkan kecanduan yang serius. Kecanduan game dapat mengganggu kehidupan sehari-hari, termasuk hubungan sosial dan kesehatan fisik.  " | lolcat -as 100
+        echo "Gangguan Kesehatan : Kecanduan game dapat menyebabkan gangguan tidur, kaku leher dan otot, hingga Karpal Turner Syndrome." | lolcat -as 100
+        echo "Menurunkan Prestasi Akademi : Kecanduan game dapat membuat anak kurang fokus di sekolah kampus dan pekerjaan. " | lolcat -as 100
+        echo "Menarik Diri Dari Kehidupan Sosial : Anak yang kecanduan game cenderung menghabiskan banyak waktu bermain, mengabaikan interaksi sosial nyata." | lolcat -as 100
+	echo "Berperilaku Agresif : Konten kekerasan dalam video game dapat membuat anak menjadi tidak sabar dan agresif.  " | lolcat -as 100
+        echo "Masalah Otot Dan Persendian : Terlalu lama duduk apalagi dengan posisi kepala menunduk rentan menimbulkan otot kaku, nyeri sendi, serta gangguan kesehatan lainnya.   " | lolcat -as 100
+	echo "Penurunan Penglihatan : Paparan cahaya biru dari layar gadget dapat menyebabkan penurunan penglihatan yang signifikan.   " | lolcat -as 100
+        echo "Kebiasaan menghabiskan waktu bermain game bisa membuat Si Kecil mengalami kecanduan yang ditandai dengan merasa gelisah dan mudah marah apabila tidak diijinkan bermain, susah berhenti main game, tidak peduli dengan orang sekitar, hingga muncul gejala penyakit, seperti migraine atau mata lelah. " | lolcat -as 100
+	echo "Saran Dari Saya Selaku Development Jangan Terlalu Sering Main Game Terlalu Malem Bisa Menghambat Kalian Di saat Beraktivitas Main Boleh Asal Di Waktu Ya Guys 😊😊  " | lolcat -as 100
+	read -p "Press [ENTER] to continue: "
+ 
+ 
+;;
+	"hak cipta")
+	clear
+	echo "Hak Cipta Si Pembuat Dwi Bakti N Dev    " | lolcat -s 10000
+	echo "Beberapa pasal yang mengatur tentang pelanggaran hak cipta di Indonesia, yaitu : " | lolcat -s 9987
+	echo "Pasal 72 ayat (1) UU Hak Cipta, mengatur tentang pidana penjara minimal satu bulan dan/atau denda minimal Rp1.000.000 bagi pelaku yang tanpa hak mengumumkan atau memperbanyak suatu ciptaan " | lolcat -as 100
+        echo "Pasal 112 UU Hak Cipta, mengatur tentang hukuman penjara maksimal dua tahun dan/atau denda maksimal Rp300.000.000 bagi pelaku yang tanpa hak melakukan perbuatan seperti yang dijelaskan dalam pasal 7 ayat 3 dan pasal 52 untuk penggunaan komersial " | lolcat -as 100
+        echo "saya mulai berfikir banyak hal tentang mencari uang dengan sangat keji hingga sampai pernah hack data dan menjual ke dark web dikala itu sangat sulit mendapatkan uang" | lolcat -as 100
+        echo "Pasal 114 UU Hak Cipta, mengatur tentang denda maksimal Rp100.000.000 bagi pelaku yang sengaja mengetahui dan membiarkan penjualan dan/atau penggandaan barang hasil pelanggaran hak cipta di tempat perdagangan yang dikelolanya " | lolcat -as 100
+	echo " Dilindungi Hak Cipta Jika kalian melanggar terima sendiri akibatnya 🤠🤠" | lolcat
+	read -p "Press [ENTER] to continue: "
+
+;;
+	"kembali")
+	mkdir $HOME/.termux/ ;echo "extra-keys = [['ESC','/','-','HOME','UP','END'],['TAB','CTRL','ALT','LEFT','DOWN','RIGHT']]" >> $HOME/.termux/termux.properties && termux-reload-settings
+	echo "Please Restart to Auto-adjust the Keys"
+	read -p "Press [ENTER] to continue or you can Restart the Terminal(its recommended):"
+;;
+	*)
+	echo "Invalid Choice !!" | lolcat
+	read -p "Press [ENTER] to continue: "
+esac
 done
