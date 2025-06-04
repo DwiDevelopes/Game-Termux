@@ -1,4 +1,3 @@
-@ -1,153 +1,293 @@
 #game termux playfrom saya
 # Termux-Games
 # Coded by: dwi bakti n dev
