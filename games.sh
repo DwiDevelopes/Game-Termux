@@ -1,3 +1,4 @@
+@@ -1,1309 +1,370 @@
 #!/bin/bash
 
 # Configuration
