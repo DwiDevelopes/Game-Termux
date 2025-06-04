@@ -3,7 +3,7 @@
 echo -e "\e[032m" "Please Don't copy the Code And Give credits If you are using this project"
 clear
 
-echo "Installing Games in Termux by LearnTermux.tech" | lolcat
+echo "Installing Games in Termux by dwi bakti n dev" | lolcat
 
 echo -e "\e[032m"
 pkg update -y && pkg upgrade -y
